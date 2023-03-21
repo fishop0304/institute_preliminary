@@ -1,0 +1,442 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DT
+Version: S-2021.06-SP2
+Date   : Tue Mar 15 13:30:06 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: res_di[1] (input port clocked by clk)
+  Endpoint: data_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  input external delay                                    5.00       5.50 f
+  res_di[1] (in)                                          0.11       5.61 f
+  add_174/A[1] (DT_DW01_inc_1_DW01_inc_2)                 0.00       5.61 f
+  add_174/U1_1_1/CO (ADDHX4)                              0.18       5.79 f
+  add_174/U1_1_2/CO (ADDHX4)                              0.16       5.95 f
+  add_174/U1_1_3/CO (ADDHX4)                              0.16       6.10 f
+  add_174/U1_1_4/S (ADDHX4)                               0.11       6.21 f
+  add_174/SUM[4] (DT_DW01_inc_1_DW01_inc_2)               0.00       6.21 f
+  U432/Y (CLKINVX1)                                       0.17       6.39 r
+  U436/Y (NAND2X1)                                        0.21       6.60 f
+  U437/Y (OAI222XL)                                       0.88       7.48 r
+  U438/Y (OAI222XL)                                       0.47       7.95 f
+  U439/Y (OA21XL)                                         0.38       8.32 f
+  U440/Y (AOI211X1)                                       0.33       8.65 r
+  U441/Y (CLKINVX1)                                       0.21       8.86 f
+  U414/Y (OAI31X2)                                        0.20       9.06 r
+  U413/Y (NOR2BX4)                                        0.44       9.50 r
+  U411/Y (AOI21XL)                                        0.25       9.75 f
+  U520/Y (OAI221XL)                                       0.33      10.08 r
+  data_reg[2]/D (DFFSX1)                                  0.00      10.08 r
+  data arrival time                                                 10.08
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  data_reg[2]/CK (DFFSX1)                                 0.00      10.40 r
+  library setup time                                     -0.21      10.19
+  data required time                                                10.19
+  --------------------------------------------------------------------------
+  data required time                                                10.19
+  data arrival time                                                -10.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DT
+Version: S-2021.06-SP2
+Date   : Tue Mar 15 13:37:48 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: res_di[1] (input port clocked by clk)
+  Endpoint: data_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     5.00       5.50 f
+  res_di[1] (in)                           0.05       5.55 f
+  U230/Y (OAI2BB2XL)                       0.38       5.94 f
+  U220/Y (AOI222XL)                        1.07       7.01 r
+  U472/Y (AOI221XL)                        0.41       7.42 f
+  U471/Y (OAI22X1)                         0.52       7.94 r
+  U381/Y (NOR2X1)                          0.21       8.15 f
+  U315/Y (OAI21X1)                         0.30       8.45 r
+  U414/CO (ACHCINX2)                       0.23       8.68 f
+  U426/Y (OAI21X2)                         0.64       9.32 r
+  U367/Y (INVX1)                           0.32       9.63 f
+  U608/Y (AOI2BB2X1)                       0.36       9.99 f
+  U351/Y (OAI211X1)                        0.21      10.20 r
+  data_reg[3]/D (DFFSX1)                   0.00      10.20 r
+  data arrival time                                  10.20
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.50      10.50
+  clock uncertainty                       -0.10      10.40
+  data_reg[3]/CK (DFFSX1)                  0.00      10.40 r
+  library setup time                      -0.19      10.21
+  data required time                                 10.21
+  -----------------------------------------------------------
+  data required time                                 10.21
+  data arrival time                                 -10.20
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DT
+Version: S-2021.06-SP2
+Date   : Fri Mar 18 12:05:56 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: res_di[1] (input port clocked by clk)
+  Endpoint: data_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  input external delay                                    5.00       5.50 f
+  res_di[1] (in)                                          0.11       5.61 f
+  add_174/A[1] (DT_DW01_inc_1_DW01_inc_2)                 0.00       5.61 f
+  add_174/U1_1_1/CO (ADDHX4)                              0.18       5.79 f
+  add_174/U1_1_2/CO (ADDHX4)                              0.16       5.95 f
+  add_174/U1_1_3/CO (ADDHX4)                              0.16       6.10 f
+  add_174/U1_1_4/S (ADDHX4)                               0.11       6.21 f
+  add_174/SUM[4] (DT_DW01_inc_1_DW01_inc_2)               0.00       6.21 f
+  U432/Y (CLKINVX1)                                       0.17       6.39 r
+  U436/Y (NAND2X1)                                        0.21       6.60 f
+  U437/Y (OAI222XL)                                       0.88       7.48 r
+  U438/Y (OAI222XL)                                       0.47       7.95 f
+  U439/Y (OA21XL)                                         0.38       8.32 f
+  U440/Y (AOI211X1)                                       0.33       8.65 r
+  U441/Y (CLKINVX1)                                       0.21       8.86 f
+  U414/Y (OAI31X2)                                        0.20       9.06 r
+  U413/Y (NOR2BX4)                                        0.44       9.50 r
+  U411/Y (AOI21XL)                                        0.25       9.75 f
+  U520/Y (OAI221XL)                                       0.33      10.08 r
+  data_reg[2]/D (DFFSX1)                                  0.00      10.08 r
+  data arrival time                                                 10.08
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  data_reg[2]/CK (DFFSX1)                                 0.00      10.40 r
+  library setup time                                     -0.21      10.19
+  data required time                                                10.19
+  --------------------------------------------------------------------------
+  data required time                                                10.19
+  data arrival time                                                -10.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DT
+Version: S-2021.06-SP2
+Date   : Fri Mar 18 12:12:03 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: res_di[5] (input port clocked by clk)
+  Endpoint: data_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     5.00       5.50 f
+  res_di[5] (in)                           0.07       5.57 f
+  U368/Y (NAND2XL)                         0.43       6.00 r
+  U355/Y (NOR2BX4)                         0.27       6.26 r
+  U381/Y (OA22X1)                          0.32       6.59 r
+  U353/Y (AOI2BB1X2)                       0.13       6.72 f
+  U345/Y (OAI32X2)                         0.35       7.07 r
+  U282/Y (AO21X2)                          0.27       7.34 r
+  U334/Y (INVX4)                           0.16       7.50 f
+  U348/Y (OA22X1)                          0.48       7.98 f
+  U402/Y (NAND3BX1)                        0.24       8.21 r
+  data_reg[3]/D (DFFSX1)                   0.00       8.21 r
+  data arrival time                                   8.21
+
+  clock clk (rise edge)                    8.00       8.00
+  clock network delay (ideal)              0.50       8.50
+  clock uncertainty                       -0.10       8.40
+  data_reg[3]/CK (DFFSX1)                  0.00       8.40 r
+  library setup time                      -0.19       8.21
+  data required time                                  8.21
+  -----------------------------------------------------------
+  data required time                                  8.21
+  data arrival time                                  -8.21
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DT
+Version: S-2021.06-SP2
+Date   : Fri Mar 18 12:15:03 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: res_di[0] (input port clocked by clk)
+  Endpoint: data_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  input external delay                                    5.00       5.50 f
+  res_di[0] (in)                                          0.09       5.59 f
+  add_174/A[0] (DT_DW01_inc_1_DW01_inc_2)                 0.00       5.59 f
+  add_174/U1/Y (AND2X2)                                   0.24       5.83 f
+  add_174/U2/Y (AND2X2)                                   0.23       6.06 f
+  add_174/U1_1_3/CO (ADDHX1)                              0.24       6.30 f
+  add_174/U1_1_4/S (ADDHX1)                               0.18       6.48 f
+  add_174/SUM[4] (DT_DW01_inc_1_DW01_inc_2)               0.00       6.48 f
+  U330/Y (CLKINVX1)                                       0.20       6.68 r
+  U306/Y (NAND2BX1)                                       0.23       6.91 f
+  U307/Y (OAI222X1)                                       0.53       7.43 r
+  U273/Y (OAI222X4)                                       0.45       7.88 f
+  U270/Y (OA21X2)                                         0.19       8.07 f
+  U487/Y (AOI211X1)                                       0.30       8.37 r
+  U320/Y (INVX1)                                          0.16       8.53 f
+  U275/Y (OAI31X1)                                        0.27       8.81 r
+  U314/Y (NOR2BX2)                                        0.75       9.56 r
+  U556/Y (AOI21X1)                                        0.26       9.82 f
+  U555/Y (OAI221XL)                                       0.31      10.13 r
+  data_reg[5]/D (DFFSX1)                                  0.00      10.13 r
+  data arrival time                                                 10.13
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  data_reg[5]/CK (DFFSX1)                                 0.00      10.40 r
+  library setup time                                     -0.21      10.19
+  data required time                                                10.19
+  --------------------------------------------------------------------------
+  data required time                                                10.19
+  data arrival time                                                -10.13
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DT
+Version: S-2021.06-SP2
+Date   : Fri Mar 18 12:29:22 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: res_di[0] (input port clocked by clk)
+  Endpoint: data_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  input external delay                                    5.00       5.50 f
+  res_di[0] (in)                                          0.09       5.59 f
+  add_173/A[0] (DT_DW01_inc_1_DW01_inc_2)                 0.00       5.59 f
+  add_173/U1/Y (AND2X2)                                   0.24       5.83 f
+  add_173/U2/Y (AND2X2)                                   0.23       6.05 f
+  add_173/U1_1_3/CO (ADDHX1)                              0.24       6.30 f
+  add_173/U1_1_4/CO (ADDHX1)                              0.26       6.56 f
+  add_173/U1_1_5/CO (ADDHX1)                              0.25       6.81 f
+  add_173/U1_1_6/S (ADDHXL)                               0.35       7.17 r
+  add_173/SUM[6] (DT_DW01_inc_1_DW01_inc_2)               0.00       7.17 r
+  U321/Y (INVX1)                                          0.35       7.51 f
+  U305/Y (OAI222XL)                                       0.61       8.12 r
+  U270/Y (OA21X2)                                         0.31       8.43 r
+  U494/Y (AOI211X1)                                       0.12       8.56 f
+  U306/Y (INVX1)                                          0.23       8.78 r
+  U273/Y (NAND2X1)                                        0.21       8.99 f
+  U274/Y (AND2X2)                                         0.47       9.46 f
+  U570/Y (AOI21X1)                                        0.31       9.77 r
+  U569/Y (OAI221XL)                                       0.27      10.05 f
+  data_reg[0]/D (DFFSX1)                                  0.00      10.05 f
+  data arrival time                                                 10.05
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  data_reg[0]/CK (DFFSX1)                                 0.00      10.40 r
+  library setup time                                     -0.23      10.17
+  data required time                                                10.17
+  --------------------------------------------------------------------------
+  data required time                                                10.17
+  data arrival time                                                -10.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DT
+Version: S-2021.06-SP2
+Date   : Fri Mar 18 14:25:06 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: res_di[0] (input port clocked by clk)
+  Endpoint: data_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  input external delay                                    5.00       5.50 r
+  res_di[0] (in)                                          0.08       5.58 r
+  add_241/A[0] (DT_DW01_inc_1_DW01_inc_2)                 0.00       5.58 r
+  add_241/U1_1_1/CO (ADDHX1)                              0.32       5.90 r
+  add_241/U1/Y (AND2X2)                                   0.22       6.12 r
+  add_241/U1_1_3/CO (ADDHX1)                              0.25       6.37 r
+  add_241/U1_1_4/S (ADDHX1)                               0.21       6.58 f
+  add_241/SUM[4] (DT_DW01_inc_1_DW01_inc_2)               0.00       6.58 f
+  U257/Y (CLKINVX1)                                       0.19       6.78 r
+  U360/Y (NAND2X1)                                        0.21       6.98 f
+  U267/Y (OR2X1)                                          0.35       7.34 f
+  U265/Y (NAND3X1)                                        0.32       7.66 r
+  U213/Y (OAI222X1)                                       0.29       7.95 f
+  U361/Y (OA21XL)                                         0.33       8.28 f
+  U362/Y (AOI211X1)                                       0.33       8.60 r
+  U215/Y (CLKINVX1)                                       0.19       8.80 f
+  U214/Y (NAND2X1)                                        0.31       9.11 r
+  U256/Y (NOR2BX4)                                        0.44       9.55 r
+  U299/Y (AOI21XL)                                        0.25       9.80 f
+  U456/Y (OAI221XL)                                       0.33      10.13 r
+  data_reg[0]/D (DFFSX1)                                  0.00      10.13 r
+  data arrival time                                                 10.13
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  data_reg[0]/CK (DFFSX1)                                 0.00      10.40 r
+  library setup time                                     -0.21      10.19
+  data required time                                                10.19
+  --------------------------------------------------------------------------
+  data required time                                                10.19
+  data arrival time                                                -10.13
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+1

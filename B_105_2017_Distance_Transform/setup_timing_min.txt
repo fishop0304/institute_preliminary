@@ -1,0 +1,343 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : DT
+Version: S-2021.06-SP2
+Date   : Tue Mar 15 13:30:06 2022
+****************************************
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: top
+
+  Startpoint: wait_addr_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wait_addr_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  wait_addr_reg[7]/CK (DFFSX1)             0.00       0.50 r
+  wait_addr_reg[7]/QN (DFFSX1)             0.52       1.02 r
+  U475/Y (OAI21XL)                         0.23       1.26 f
+  wait_addr_reg[7]/D (DFFSX1)              0.00       1.26 f
+  data arrival time                                   1.26
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  wait_addr_reg[7]/CK (DFFSX1)             0.00       0.60 r
+  library hold time                       -0.05       0.55
+  data required time                                  0.55
+  -----------------------------------------------------------
+  data required time                                  0.55
+  data arrival time                                  -1.26
+  -----------------------------------------------------------
+  slack (MET)                                         0.71
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : DT
+Version: S-2021.06-SP2
+Date   : Tue Mar 15 13:37:48 2022
+****************************************
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: top
+
+  Startpoint: sti_addr_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sti_addr_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  sti_addr_reg[4]/CK (DFFRX2)              0.00       0.50 r
+  sti_addr_reg[4]/QN (DFFRX2)              0.42       0.92 r
+  U542/Y (AOI21XL)                         0.20       1.12 f
+  sti_addr_reg[4]/D (DFFRX2)               0.00       1.12 f
+  data arrival time                                   1.12
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  sti_addr_reg[4]/CK (DFFRX2)              0.00       0.60 r
+  library hold time                       -0.03       0.57
+  data required time                                  0.57
+  -----------------------------------------------------------
+  data required time                                  0.57
+  data arrival time                                  -1.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.54
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : DT
+Version: S-2021.06-SP2
+Date   : Fri Mar 18 12:05:56 2022
+****************************************
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: top
+
+  Startpoint: wait_addr_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wait_addr_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  wait_addr_reg[7]/CK (DFFSX1)             0.00       0.50 r
+  wait_addr_reg[7]/QN (DFFSX1)             0.52       1.02 r
+  U475/Y (OAI21XL)                         0.23       1.26 f
+  wait_addr_reg[7]/D (DFFSX1)              0.00       1.26 f
+  data arrival time                                   1.26
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  wait_addr_reg[7]/CK (DFFSX1)             0.00       0.60 r
+  library hold time                       -0.05       0.55
+  data required time                                  0.55
+  -----------------------------------------------------------
+  data required time                                  0.55
+  data arrival time                                  -1.26
+  -----------------------------------------------------------
+  slack (MET)                                         0.71
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : DT
+Version: S-2021.06-SP2
+Date   : Fri Mar 18 12:12:03 2022
+****************************************
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: top
+
+  Startpoint: wait_addr_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wait_addr_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  wait_addr_reg[1]/CK (DFFRX1)             0.00       0.50 r
+  wait_addr_reg[1]/QN (DFFRX1)             0.42       0.92 r
+  U543/Y (OAI211X1)                        0.19       1.12 f
+  wait_addr_reg[1]/D (DFFRX1)              0.00       1.12 f
+  data arrival time                                   1.12
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  wait_addr_reg[1]/CK (DFFRX1)             0.00       0.60 r
+  library hold time                       -0.05       0.55
+  data required time                                  0.55
+  -----------------------------------------------------------
+  data required time                                  0.55
+  data arrival time                                  -1.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.57
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : DT
+Version: S-2021.06-SP2
+Date   : Fri Mar 18 12:15:03 2022
+****************************************
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: top
+
+  Startpoint: wait_addr_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wait_addr_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  wait_addr_reg[1]/CK (DFFRX1)             0.00       0.50 r
+  wait_addr_reg[1]/QN (DFFRX1)             0.42       0.92 r
+  U490/Y (OAI211X1)                        0.19       1.12 f
+  wait_addr_reg[1]/D (DFFRX1)              0.00       1.12 f
+  data arrival time                                   1.12
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  wait_addr_reg[1]/CK (DFFRX1)             0.00       0.60 r
+  library hold time                       -0.05       0.55
+  data required time                                  0.55
+  -----------------------------------------------------------
+  data required time                                  0.55
+  data arrival time                                  -1.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.57
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : DT
+Version: S-2021.06-SP2
+Date   : Fri Mar 18 12:29:22 2022
+****************************************
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: top
+
+  Startpoint: wait_addr_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wait_addr_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  wait_addr_reg[1]/CK (DFFRX1)             0.00       0.50 r
+  wait_addr_reg[1]/QN (DFFRX1)             0.42       0.92 r
+  U497/Y (OAI211X1)                        0.19       1.12 f
+  wait_addr_reg[1]/D (DFFRX1)              0.00       1.12 f
+  data arrival time                                   1.12
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  wait_addr_reg[1]/CK (DFFRX1)             0.00       0.60 r
+  library hold time                       -0.05       0.55
+  data required time                                  0.55
+  -----------------------------------------------------------
+  data required time                                  0.55
+  data arrival time                                  -1.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.57
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : DT
+Version: S-2021.06-SP2
+Date   : Fri Mar 18 14:25:06 2022
+****************************************
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: top
+
+  Startpoint: count_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: count_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  count_reg[1]/CK (DFFRX1)                 0.00       0.50 r
+  count_reg[1]/QN (DFFRX1)                 0.47       0.97 f
+  U482/Y (MXI2X1)                          0.29       1.26 f
+  count_reg[1]/D (DFFRX1)                  0.00       1.26 f
+  data arrival time                                   1.26
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  count_reg[1]/CK (DFFRX1)                 0.00       0.60 r
+  library hold time                       -0.05       0.55
+  data required time                                  0.55
+  -----------------------------------------------------------
+  data required time                                  0.55
+  data arrival time                                  -1.26
+  -----------------------------------------------------------
+  slack (MET)                                         0.71
+
+
+1
