@@ -1,0 +1,98 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'NFC' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : NFC
+Version: S-2021.06-SP2
+Date   : Tue Mar 29 00:36:38 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: clk (clock source 'clk')
+  Endpoint: F_WEN (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  NFC                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (fall edge)                   10.00      10.00
+  clk (in)                              1011.00 #  1021.00 f
+  I_199/Y (CLKINVX6)                       0.03 #  1021.03 r
+  C77184/Y (AND2X8)                        0.94    1021.97 r
+  F_WEN (out)                              0.00    1021.97 r
+  data arrival time                                1021.97
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              1.00      21.00
+  clock uncertainty                       -1.00      20.00
+  output external delay                   -2.00      18.00
+  data required time                                 18.00
+  -----------------------------------------------------------
+  data required time                                 18.00
+  data arrival time                               -1021.97
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -1003.97
+
+
+1
+Information: Updating design information... (UID-85)
+Warning: Design 'NFC' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : NFC
+Version: S-2021.06-SP2
+Date   : Tue Mar 29 10:57:39 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: clk (clock source 'clk')
+  Endpoint: F_WEN (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  NFC                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (fall edge)                   10.00      10.00
+  clk (in)                              1011.00 #  1021.00 f
+  I_199/Y (CLKINVX6)                       0.03 #  1021.03 r
+  C77184/Y (AND2X8)                        0.94    1021.97 r
+  F_WEN (out)                              0.00    1021.97 r
+  data arrival time                                1021.97
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              1.00      21.00
+  clock uncertainty                       -1.00      20.00
+  output external delay                   -2.00      18.00
+  data required time                                 18.00
+  -----------------------------------------------------------
+  data required time                                 18.00
+  data arrival time                               -1021.97
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -1003.97
+
+
+1

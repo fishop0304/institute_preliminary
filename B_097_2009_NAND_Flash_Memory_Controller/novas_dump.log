@@ -1,0 +1,152 @@
+LatestSupportedVersion: Xcelium20.9
+xmsim(64) 20.09-s007
+Linux 5.4.168-1.el7.elrepo.x86_64 #1 SMP Tue Dec 21 12:52:10 EST 2021 x86_64
+CPU cores: 32
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		8192 kbytes
+coredumpsize	0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked	64 kbytes
+maxproc			4096
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+REMOTEHOST=140.127.112.103
+MANPATH=/usr/cad/synopsys/synthesis/cur/doc/syn/man
+XDG_SESSION_ID=197
+SYNOPSYS_TMAX=/usr/cad/synopsys/tmax/cur
+XLOCALEDIR=/usr/cad/synopsys/icc2/cur/etc/locale
+HOSTNAME=hp.diclab.nkust.edu.tw
+SELINUX_ROLE_REQUESTED=
+HOST=hp.diclab.nkust.edu.tw
+SHELL=/bin/bash
+TERM=xterm
+HISTSIZE=1000
+SSH_CLIENT=140.127.112.103 61723 15605
+SELINUX_USE_CURRENT_RANGE=
+MGC_LOCATION_MAP=NO_MAP
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+SSH_TTY=/dev/pts/2
+SG_HTML_BROWSER=/usr/bin/mozilla
+QT_GRAPHICSSYSTEM_CHECKED=1
+GROUP=workstation
+USER=fishop
+LD_LIBRARY_PATH=/usr/cad/synopsys/verdi/cur/etc/lib/libstdc++/LINUX64/:/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX64/:/:/usr/cad/cadence/INNOVUS/INNOVUS_20.10.000/tools/lib/64bit:/usr/cad/cadence/INNOVUS/INNOVUS_20.10.000/tools/lib64:/usr/cad/cadence/INNOVUS/INNOVUS_20.10.000/tools/lib::/usr/cad/cadence/XCELIUM/XCELIUM_20.09.007/tools/lib/64bit:/usr/cad/cadence/XCELIUM/XCELIUM_20.09.007/tools/lib64:/usr/cad/cadence/XCELIUM/XCELIUM_20.09.007/tools/lib::/usr/cad/cadence/CONFRML/CONFRML_20.10.100/tools/lib/64bit:/usr/cad/cadence/CONFRML/CONFRML_20.10.100/tools/lib64:/usr/cad/cadence/CONFRML/CONFRML_20.10.100/tools/lib::/lib64:/usr/lib64:/usr/local/lib64
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+MTI_VCO_MODE=64
+HOSTTYPE=x86_64-linux
+PATH=/usr/cad/synopsys/spyglass/cur/SPYGLASS_HOME/bin:/usr/cad/synopsys/verdi/cur/bin:/usr/cad/synopsys/verdi/cur/nLint/bin:/usr/cad/synopsys/vcs/cur/bin:/usr/cad/synopsys/vcs/cur/linux/bin:/usr/cad/synopsys/vcs/cur/linux/util:/usr/cad/synopsys/vcs/cur/linux/flexlm:/usr/cad/synopsys/tmax/cur/bin:/usr/bin/X11:/usr/cad/synopsys/primetime/cur/amd64/syn/bin:/usr/cad/synopsys/icc2/cur/bin:/usr/cad/synopsys/icc/cur/amd64/syn/bin:/usr/cad/synopsys/hercules/cur/bin/AMD.64:/usr/bin/X11:/usr/cad/synopsys/coreConsultant/cur/bin:/usr/cad/synopsys/synthesis/cur/amd64/syn/bin:/usr/cad/synopsys/lc/cur/bin:/usr/cad/mentor/Questa_Sim/cur/questasim/bin:/usr/cad/mentor/modelsim/cur/bin:/usr/cad/mentor/calibre/cur/bin:/usr/cad/cadence/JASPER/jasper_2021.03/bin:/usr/cad/cadence/INNOVUS/INNOVUS_20.10.000/tools/bin/64bit:/usr/cad/cadence/INNOVUS/INNOVUS_20.10.000/tools/bin:/usr/cad/cadence/XCELIUM/XCELIUM_20.09.007/tools/bin/64bit:/usr/cad/cadence/XCELIUM/XCELIUM_20.09.007/tools/bin:/usr/cad/cadence/CONFRML/CONFRML_20.10.100/tools/bin/64bit:/usr/cad/cadence/CONFRML/CONFRML_20.10.100/tools/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/fishop/.local/bin:/home/fishop/bin
+MAIL=/var/spool/mail/fishop
+_=/usr/cad/cadence/XCELIUM/XCELIUM_20.09.007/tools/bin/64bit/xmverilog
+VERDI_HOME=/usr/cad/synopsys/verdi/cur
+PWD=/home/fishop/097_2009_NAND_Flash_Memory_Controller
+VCS_HOME=/usr/cad/synopsys/vcs/cur
+EDITOR=/usr/bin/vim
+LANG=en_US.UTF-8
+SYNTHESIS=/usr/cad/synopsys/synthesis/cur
+SELINUX_LEVEL_REQUESTED=
+VCS_CC=gcc
+PRIMETIME=/usr/cad/synopsys/primetime/cur
+SYNOPSYS=/usr/cad/synopsys/icc/cur
+LM_LICENSE_FILE=26585@lsncu:1717@lstn:5280@lstn
+HISTCONTROL=ignoredups
+HOME=/home/fishop
+SHLVL=3
+OSTYPE=linux
+MGC_HOME=/usr/cad/mentor/modelsim/cur
+CDN_SYNTH_ROOT=/usr/cad/cadence/GENUS/cur/tools
+MGC_TMPDIR=/tmp
+VENDOR=unknown
+MACHTYPE=x86_64
+LOGNAME=fishop
+QTLIB=/usr/lib64/qt-3.3/lib
+SSH_CONNECTION=140.127.112.103 61723 203.64.101.249 15605
+XDG_DATA_DIRS=/home/fishop/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+SHLIB_PATH=/usr/cad/synopsys/verdi/cur/etc/lib/libstdc++/LINUX64/
+DISPLAY=localhost:16.0
+XDG_RUNTIME_DIR=/run/user/2001
+SYN_MAN_DIR=/usr/cad/synopsys/synthesis/cur/doc/syn/man
+BASH_FUNC_ocv()=() {  echo "Running $1...";
+ g++ "$1" -std=c++11 `pkg-config --cflags --libs opencv` && time ./a.out "$2"
+}
+_XRUNROOT_=/usr/cad/cadence/XCELIUM/XCELIUM_20.09.007/tools
+_IRUNROOT_=/usr/cad/cadence/XCELIUM/XCELIUM_20.09.007/tools
+CDS_ARCH=lnx86
+XMRUNMODE=xmverilog:./xcelium.d/run.lnx8664.20.09.d
+XRUNBATCH=FALSE
+AMS_LOG_FILE_NAME=xmverilog.log
+IMPERAS_PORT_FILE=.vsp_ovp_gdb_port
+TCL_LIBRARY=/usr/cad/cadence/XCELIUM/XCELIUM_20.09.007/tools/inca/files/tcl/library
+Runtime command line arguments:
+argv[0]=xmverilog
+argv[1]=testfixture.v
+argv[2]=NFC.v
+argv[3]=+define+tb1+FSDB
+argv[4]=+access+r
+argv[5]=+notimingcheck
+93 profile - 100
+          CPU/Mem usage: 0.050 sys,  0.170 user,  239.46M sys,  0.00M vm
+94 VC callback profile - scalar:0 vector:0
+95 Mon Mar 28 14:02:24 2022
+96 pliAppInit
+97 FSDB_GATE is disabled.
+98 Enable Parallel Dumping.
+99 pliAppMiscSet: New Sim Round
+100 pliEntryInit
+101 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX64/libsscore_xcelium.so through $LD_LIBRARY_PATH setting.
+102 argv[0]: nfc.fsdb
+103 FSDB Dumper for Xcelium, Release Verdi_S-2021.09, Linux x86_64/64bit, 08/29/2021
+104 (C) 1996 - 2021 by Synopsys, Inc.
+105 sps_call_fsdbDumpfile at 0 : /home/fishop/097_2009_NAND_Flash_Memory_Controller/testfixture.v(90)
+106 argv[0]: nfc.fsdb
+107 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+108 *Verdi* : Create FSDB file 'nfc.fsdb'
+109 sps_call_fsdbDumpvars at 0 : /home/fishop/097_2009_NAND_Flash_Memory_Controller/testfixture.v(91)
+110 *Verdi* : Begin traversing the scopes, layer (0).
+111 Cell instance `test.m1'.
+112 *Verdi* : End of traversing.
+113 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.070 sys,  0.200 user,  343.55M sys,  0.00M vm
+                   incr: 0.010 sys,  0.010 user,  9.20M sys,  0.00M vm
+                   accu: 0.010 sys,  0.010 user,  9.20M sys,  0.00M vm
+              accu incr: 0.010 sys,  0.010 user,  9.20M sys,  0.00M vm
+
+          Count usage: 345 var,  273 idcode,  273 callback
+                 incr: 345 var,  273 idcode,  273 callback
+                 accu: 345 var,  273 idcode,  273 callback
+            accu incr: 345 var,  273 idcode,  273 callback
+114 VC callback profile - scalar:0 vector:0
+115 Mon Mar 28 14:02:24 2022
+116 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.070 sys,  0.200 user,  344.74M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  1.19M sys,  0.00M vm
+                   accu: 0.010 sys,  0.010 user,  10.39M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  1.19M sys,  0.00M vm
+
+          Count usage: 345 var,  273 idcode,  273 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 345 var,  273 idcode,  273 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+117 VC callback profile - scalar:165 vector:108
+118 Mon Mar 28 14:02:24 2022
+119 End of simulation at 82000
+120 VC callback profile - scalar:392 vector:4727
+121 Mon Mar 28 14:02:24 2022
+122 Begin FSDB profile info:
+123 FSDB Writer : bc1(392) bcn(4727) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.027806) io wait(0.000000) theadpool wait(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+124 End FSDB profile info
+125 Parallel profile    -  Flush:3 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:1
+126                        ProduceTime:0.290657032 ConsumerTime:0.000000000 Buffer:64MB
+127 SimExit
+128 Sim process exit
