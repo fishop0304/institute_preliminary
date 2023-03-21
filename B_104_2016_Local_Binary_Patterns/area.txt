@@ -1,0 +1,390 @@
+ 
+****************************************
+Report : area
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:10:58 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                          134
+Number of nets:                           686
+Number of cells:                          547
+Number of combinational cells:            489
+Number of sequential cells:                53
+Number of macros/black boxes:               0
+Number of buf/inv:                        190
+Number of references:                      52
+
+Combinational area:               6200.602259
+Buf/Inv area:                     1286.629209
+Noncombinational area:            2118.355145
+Macro/Black Box area:                0.000000
+Net Interconnect area:           54833.607330
+
+Total cell area:                  8318.957404
+Total area:                      63152.564734
+1
+ 
+****************************************
+Report : area
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:17:05 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           50
+Number of nets:                           391
+Number of cells:                          321
+Number of combinational cells:            267
+Number of sequential cells:                53
+Number of macros/black boxes:               0
+Number of buf/inv:                         63
+Number of references:                      58
+
+Combinational area:               2705.655579
+Buf/Inv area:                      694.236595
+Noncombinational area:            1719.466148
+Macro/Black Box area:                0.000000
+Net Interconnect area:           41766.875641
+
+Total cell area:                  4425.121727
+Total area:                      46191.997368
+1
+ 
+****************************************
+Report : area
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:25:52 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           50
+Number of nets:                           359
+Number of cells:                          313
+Number of combinational cells:            259
+Number of sequential cells:                53
+Number of macros/black boxes:               0
+Number of buf/inv:                         69
+Number of references:                      51
+
+Combinational area:               2145.513592
+Buf/Inv area:                      672.170395
+Noncombinational area:            1710.979145
+Macro/Black Box area:                0.000000
+Net Interconnect area:           40553.536255
+
+Total cell area:                  3856.492737
+Total area:                      44410.028991
+1
+ 
+****************************************
+Report : area
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:31:13 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                          134
+Number of nets:                           647
+Number of cells:                          509
+Number of combinational cells:            451
+Number of sequential cells:                53
+Number of macros/black boxes:               0
+Number of buf/inv:                        167
+Number of references:                      46
+
+Combinational area:               5604.814868
+Buf/Inv area:                     1123.678803
+Noncombinational area:            1726.255749
+Macro/Black Box area:                0.000000
+Net Interconnect area:           52360.261627
+
+Total cell area:                  7331.070617
+Total area:                      59691.332244
+1
+ 
+****************************************
+Report : area
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:33:27 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           50
+Number of nets:                           359
+Number of cells:                          313
+Number of combinational cells:            259
+Number of sequential cells:                53
+Number of macros/black boxes:               0
+Number of buf/inv:                         69
+Number of references:                      51
+
+Combinational area:               2145.513592
+Buf/Inv area:                      672.170395
+Noncombinational area:            1710.979145
+Macro/Black Box area:                0.000000
+Net Interconnect area:           40553.536255
+
+Total cell area:                  3856.492737
+Total area:                      44410.028991
+1
+ 
+****************************************
+Report : area
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:34:06 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           50
+Number of nets:                           358
+Number of cells:                          312
+Number of combinational cells:            258
+Number of sequential cells:                53
+Number of macros/black boxes:               0
+Number of buf/inv:                         68
+Number of references:                      51
+
+Combinational area:               2138.723990
+Buf/Inv area:                      665.380794
+Noncombinational area:            1710.979145
+Macro/Black Box area:                0.000000
+Net Interconnect area:           40506.869354
+
+Total cell area:                  3849.703135
+Total area:                      44356.572490
+1
+ 
+****************************************
+Report : area
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:35:49 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           50
+Number of nets:                           358
+Number of cells:                          312
+Number of combinational cells:            258
+Number of sequential cells:                53
+Number of macros/black boxes:               0
+Number of buf/inv:                         68
+Number of references:                      52
+
+Combinational area:               2138.723990
+Buf/Inv area:                      665.380794
+Noncombinational area:            1710.979145
+Macro/Black Box area:                0.000000
+Net Interconnect area:           40506.869354
+
+Total cell area:                  3849.703135
+Total area:                      44356.572490
+1
+ 
+****************************************
+Report : area
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:36:38 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           50
+Number of nets:                           358
+Number of cells:                          312
+Number of combinational cells:            258
+Number of sequential cells:                53
+Number of macros/black boxes:               0
+Number of buf/inv:                         68
+Number of references:                      51
+
+Combinational area:               2138.723990
+Buf/Inv area:                      665.380794
+Noncombinational area:            1710.979145
+Macro/Black Box area:                0.000000
+Net Interconnect area:           40506.869354
+
+Total cell area:                  3849.703135
+Total area:                      44356.572490
+1
+ 
+****************************************
+Report : area
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:40:50 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           50
+Number of nets:                           358
+Number of cells:                          312
+Number of combinational cells:            258
+Number of sequential cells:                53
+Number of macros/black boxes:               0
+Number of buf/inv:                         68
+Number of references:                      51
+
+Combinational area:               2138.723990
+Buf/Inv area:                      665.380794
+Noncombinational area:            1710.979145
+Macro/Black Box area:                0.000000
+Net Interconnect area:           40506.869354
+
+Total cell area:                  3849.703135
+Total area:                      44356.572490
+1
+ 
+****************************************
+Report : area
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:41:46 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           50
+Number of nets:                           358
+Number of cells:                          312
+Number of combinational cells:            258
+Number of sequential cells:                53
+Number of macros/black boxes:               0
+Number of buf/inv:                         68
+Number of references:                      51
+
+Combinational area:               2138.723990
+Buf/Inv area:                      665.380794
+Noncombinational area:            1710.979145
+Macro/Black Box area:                0.000000
+Net Interconnect area:           40506.869354
+
+Total cell area:                  3849.703135
+Total area:                      44356.572490
+1
+ 
+****************************************
+Report : area
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:46:26 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           50
+Number of nets:                           391
+Number of cells:                          321
+Number of combinational cells:            267
+Number of sequential cells:                53
+Number of macros/black boxes:               0
+Number of buf/inv:                         63
+Number of references:                      58
+
+Combinational area:               2705.655579
+Buf/Inv area:                      694.236595
+Noncombinational area:            1719.466148
+Macro/Black Box area:                0.000000
+Net Interconnect area:           41766.875641
+
+Total cell area:                  4425.121727
+Total area:                      46191.997368
+1
+ 
+****************************************
+Report : area
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:48:03 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           50
+Number of nets:                           391
+Number of cells:                          321
+Number of combinational cells:            267
+Number of sequential cells:                53
+Number of macros/black boxes:               0
+Number of buf/inv:                         63
+Number of references:                      58
+
+Combinational area:               2705.655579
+Buf/Inv area:                      694.236595
+Noncombinational area:            1719.466148
+Macro/Black Box area:                0.000000
+Net Interconnect area:           41766.875641
+
+Total cell area:                  4425.121727
+Total area:                      46191.997368
+1
+ 
+****************************************
+Report : area
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Sun Mar 13 23:05:37 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           50
+Number of nets:                           391
+Number of cells:                          321
+Number of combinational cells:            267
+Number of sequential cells:                53
+Number of macros/black boxes:               0
+Number of buf/inv:                         63
+Number of references:                      58
+
+Combinational area:               2705.655579
+Buf/Inv area:                      694.236595
+Noncombinational area:            1719.466148
+Macro/Black Box area:                0.000000
+Net Interconnect area:           41766.875641
+
+Total cell area:                  4425.121727
+Total area:                      46191.997368
+1

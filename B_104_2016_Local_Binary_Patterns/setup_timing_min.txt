@@ -1,0 +1,630 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:10:58 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: data_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LBP                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  data_reg[0]/CK (DFFRX4)                  0.00       0.50 r
+  data_reg[0]/QN (DFFRX4)                  0.30       0.80 r
+  U3/Y (OAI2BB2XL)                         0.18       0.99 f
+  data_reg[0]/D (DFFRX4)                   0.00       0.99 f
+  data arrival time                                   0.99
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  data_reg[0]/CK (DFFRX4)                  0.00       0.60 r
+  library hold time                        0.01       0.61
+  data required time                                  0.61
+  -----------------------------------------------------------
+  data required time                                  0.61
+  data arrival time                                  -0.99
+  -----------------------------------------------------------
+  slack (MET)                                         0.37
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:17:05 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: lbp_addr_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lbp_addr_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LBP                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  lbp_addr_reg[1]/CK (DFFRX1)              0.00       0.50 r
+  lbp_addr_reg[1]/QN (DFFRX1)              0.52       1.02 r
+  U412/Y (AOI2BB2X1)                       0.19       1.21 f
+  lbp_addr_reg[1]/D (DFFRX1)               0.00       1.21 f
+  data arrival time                                   1.21
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  lbp_addr_reg[1]/CK (DFFRX1)              0.00       0.60 r
+  library hold time                       -0.04       0.56
+  data required time                                  0.56
+  -----------------------------------------------------------
+  data required time                                  0.56
+  data arrival time                                  -1.21
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:25:52 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: status_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: finish_reg (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LBP                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  status_reg[1]/CK (DFFRX1)                0.00       0.50 r
+  status_reg[1]/Q (DFFRX1)                 0.48       0.98 r
+  U421/Y (NOR3XL)                          0.17       1.15 f
+  finish_reg/D (DFFRX1)                    0.00       1.15 f
+  data arrival time                                   1.15
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  finish_reg/CK (DFFRX1)                   0.00       0.60 r
+  library hold time                       -0.05       0.55
+  data required time                                  0.55
+  -----------------------------------------------------------
+  data required time                                  0.55
+  data arrival time                                  -1.15
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:31:13 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: data_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LBP                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  data_reg[1]/CK (DFFRX1)                  0.00       0.50 r
+  data_reg[1]/QN (DFFRX1)                  0.41       0.91 r
+  U4/Y (OAI2BB2XL)                         0.19       1.10 f
+  data_reg[1]/D (DFFRX1)                   0.00       1.10 f
+  data arrival time                                   1.10
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  data_reg[1]/CK (DFFRX1)                  0.00       0.60 r
+  library hold time                       -0.06       0.54
+  data required time                                  0.54
+  -----------------------------------------------------------
+  data required time                                  0.54
+  data arrival time                                  -1.10
+  -----------------------------------------------------------
+  slack (MET)                                         0.56
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:33:27 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: status_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: finish_reg (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LBP                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  status_reg[1]/CK (DFFRX1)                0.00       0.50 r
+  status_reg[1]/Q (DFFRX1)                 0.48       0.98 r
+  U421/Y (NOR3XL)                          0.17       1.15 f
+  finish_reg/D (DFFRX1)                    0.00       1.15 f
+  data arrival time                                   1.15
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  finish_reg/CK (DFFRX1)                   0.00       0.60 r
+  library hold time                       -0.05       0.55
+  data required time                                  0.55
+  -----------------------------------------------------------
+  data required time                                  0.55
+  data arrival time                                  -1.15
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:34:06 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: status_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: finish_reg (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LBP                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  status_reg[1]/CK (DFFRX1)                0.00       0.50 r
+  status_reg[1]/Q (DFFRX1)                 0.48       0.98 r
+  U427/Y (NOR3XL)                          0.17       1.15 f
+  finish_reg/D (DFFRX1)                    0.00       1.15 f
+  data arrival time                                   1.15
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  finish_reg/CK (DFFRX1)                   0.00       0.60 r
+  library hold time                       -0.05       0.55
+  data required time                                  0.55
+  -----------------------------------------------------------
+  data required time                                  0.55
+  data arrival time                                  -1.15
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:35:49 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: status_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: finish_reg (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LBP                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  status_reg[1]/CK (DFFRX1)                0.00       0.50 r
+  status_reg[1]/Q (DFFRX1)                 0.48       0.98 r
+  U427/Y (NOR3XL)                          0.17       1.15 f
+  finish_reg/D (DFFRX1)                    0.00       1.15 f
+  data arrival time                                   1.15
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  finish_reg/CK (DFFRX1)                   0.00       0.60 r
+  library hold time                       -0.05       0.55
+  data required time                                  0.55
+  -----------------------------------------------------------
+  data required time                                  0.55
+  data arrival time                                  -1.15
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:36:38 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: status_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: finish_reg (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LBP                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  status_reg[1]/CK (DFFRX1)                0.00       0.50 r
+  status_reg[1]/Q (DFFRX1)                 0.48       0.98 r
+  U427/Y (NOR3XL)                          0.17       1.15 f
+  finish_reg/D (DFFRX1)                    0.00       1.15 f
+  data arrival time                                   1.15
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  finish_reg/CK (DFFRX1)                   0.00       0.60 r
+  library hold time                       -0.05       0.55
+  data required time                                  0.55
+  -----------------------------------------------------------
+  data required time                                  0.55
+  data arrival time                                  -1.15
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:40:50 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: status_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: finish_reg (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LBP                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  status_reg[1]/CK (DFFRX1)                0.00       0.50 r
+  status_reg[1]/Q (DFFRX1)                 0.48       0.98 r
+  U427/Y (NOR3XL)                          0.17       1.15 f
+  finish_reg/D (DFFRX1)                    0.00       1.15 f
+  data arrival time                                   1.15
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  finish_reg/CK (DFFRX1)                   0.00       0.60 r
+  library hold time                       -0.05       0.55
+  data required time                                  0.55
+  -----------------------------------------------------------
+  data required time                                  0.55
+  data arrival time                                  -1.15
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:41:46 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: status_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: finish_reg (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LBP                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  status_reg[1]/CK (DFFRX1)                0.00       0.50 r
+  status_reg[1]/Q (DFFRX1)                 0.48       0.98 r
+  U427/Y (NOR3XL)                          0.17       1.15 f
+  finish_reg/D (DFFRX1)                    0.00       1.15 f
+  data arrival time                                   1.15
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  finish_reg/CK (DFFRX1)                   0.00       0.60 r
+  library hold time                       -0.05       0.55
+  data required time                                  0.55
+  -----------------------------------------------------------
+  data required time                                  0.55
+  data arrival time                                  -1.15
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:46:26 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: lbp_addr_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lbp_addr_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LBP                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  lbp_addr_reg[1]/CK (DFFRX1)              0.00       0.50 r
+  lbp_addr_reg[1]/QN (DFFRX1)              0.52       1.02 r
+  U412/Y (AOI2BB2X1)                       0.19       1.21 f
+  lbp_addr_reg[1]/D (DFFRX1)               0.00       1.21 f
+  data arrival time                                   1.21
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  lbp_addr_reg[1]/CK (DFFRX1)              0.00       0.60 r
+  library hold time                       -0.04       0.56
+  data required time                                  0.56
+  -----------------------------------------------------------
+  data required time                                  0.56
+  data arrival time                                  -1.21
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Thu Feb 17 21:48:03 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: lbp_addr_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lbp_addr_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LBP                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  lbp_addr_reg[1]/CK (DFFRX1)              0.00       0.50 r
+  lbp_addr_reg[1]/QN (DFFRX1)              0.52       1.02 r
+  U412/Y (AOI2BB2X1)                       0.19       1.21 f
+  lbp_addr_reg[1]/D (DFFRX1)               0.00       1.21 f
+  data arrival time                                   1.21
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  lbp_addr_reg[1]/CK (DFFRX1)              0.00       0.60 r
+  library hold time                       -0.04       0.56
+  data required time                                  0.56
+  -----------------------------------------------------------
+  data required time                                  0.56
+  data arrival time                                  -1.21
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Sun Mar 13 23:05:37 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: lbp_addr_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lbp_addr_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LBP                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  lbp_addr_reg[1]/CK (DFFRX1)              0.00       0.50 r
+  lbp_addr_reg[1]/QN (DFFRX1)              0.52       1.02 r
+  U412/Y (AOI2BB2X1)                       0.19       1.21 f
+  lbp_addr_reg[1]/D (DFFRX1)               0.00       1.21 f
+  data arrival time                                   1.21
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  lbp_addr_reg[1]/CK (DFFRX1)              0.00       0.60 r
+  library hold time                       -0.04       0.56
+  data required time                                  0.56
+  -----------------------------------------------------------
+  data required time                                  0.56
+  data arrival time                                  -1.21
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+1
