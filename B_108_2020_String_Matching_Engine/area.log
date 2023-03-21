@@ -1,0 +1,54 @@
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Error: Could not read the following target libraries:
+slow.db 
+ (UIO-3)
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+ 
+****************************************
+Report : area
+Design : SME
+Version: S-2021.06-SP2
+Date   : Tue Feb 15 23:44:13 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    gtech (File: /usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db)
+
+Number of ports:                          404
+Number of nets:                          1567
+Number of cells:                         1131
+Number of combinational cells:            710
+Number of sequential cells:               377
+Number of macros/black boxes:               0
+Number of buf/inv:                        173
+Number of references:                      27
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                     0.000000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+1
