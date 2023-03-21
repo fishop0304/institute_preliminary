@@ -1,0 +1,641 @@
+Error: Current design is not defined. (UID-4)
+0
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Error: Could not read the following target libraries:
+slow.db fast.db 
+ (UIO-3)
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Information: Updating design information... (UID-85)
+Warning: Design 'CONV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CONV
+Version: S-2021.06-SP2
+Date   : Sun Mar 13 23:33:10 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: nom_pvt   Library: dw_foundation.sldb
+Wire Load Model Mode: top
+
+  Startpoint: cdata_rd[0]
+              (input port clocked by clk)
+  Endpoint: cdata_wr_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  input external delay                                    5.00       5.50 r
+  cdata_rd[0] (in)                                        0.00       5.50 r
+  C1952/Z_0 (*SELECT_OP_4.20_4.1_20)                      0.00       5.50 r
+  cdata_wr_reg[0]/next_state (**SEQGEN**)                 0.00       5.50 r
+  data arrival time                                                  5.50
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  cdata_wr_reg[0]/clocked_on (**SEQGEN**)                 0.00      10.40 r
+  library setup time                                      0.00      10.40
+  data required time                                                10.40
+  --------------------------------------------------------------------------
+  data required time                                                10.40
+  data arrival time                                                 -5.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.90
+
+
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CONV
+Version: S-2021.06-SP2
+Date   : Sun Mar 13 23:34:47 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: kernal_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: kernal_data_reg[32]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONV               tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  kernal_reg[1]/CK (EDFFX4)                               0.00       0.50 r
+  kernal_reg[1]/QN (EDFFX4)                               0.45       0.95 f
+  U784/Y (INVX20)                                         0.30       1.26 r
+  mult_255/b[1] (CONV_DW_mult_tc_20)                      0.00       1.26 r
+  mult_255/U434/Y (BUFX8)                                 0.30       1.55 r
+  mult_255/U472/Y (NOR2X6)                                0.11       1.66 f
+  mult_255/U301/Y (OAI21X4)                               0.21       1.87 r
+  mult_255/U300/Y (INVX8)                                 0.10       1.97 f
+  mult_255/U294/Y (OAI21X4)                               0.13       2.10 r
+  mult_255/U284/Y (XNOR2X4)                               0.17       2.28 f
+  mult_255/product[4] (CONV_DW_mult_tc_20)                0.00       2.28 f
+  add_255/B[1] (CONV_DW01_add_12)                         0.00       2.28 f
+  add_255/U1_1/CO (ADDFHX4)                               0.27       2.55 f
+  add_255/U1_2/CO (ADDFHX4)                               0.20       2.76 f
+  add_255/U1_3/CO (ADDFHX4)                               0.20       2.96 f
+  add_255/U1_4/CO (ADDFHX4)                               0.20       3.16 f
+  add_255/U1_5/CO (ADDFHX4)                               0.20       3.37 f
+  add_255/U1_6/CO (ADDFHX4)                               0.20       3.57 f
+  add_255/U1_7/CO (ADDFHX4)                               0.20       3.77 f
+  add_255/U1_8/CO (ADDFHX4)                               0.20       3.98 f
+  add_255/U1_9/CO (ADDFHX4)                               0.20       4.18 f
+  add_255/U1_10/CO (ADDFHX4)                              0.20       4.38 f
+  add_255/U1_11/CO (ADDFHX4)                              0.19       4.58 f
+  add_255/U1_12/CO (ADDFXL)                               0.48       5.06 f
+  add_255/U1_13/CO (ADDFHX2)                              0.29       5.35 f
+  add_255/U1_14/CO (ADDFHX4)                              0.21       5.57 f
+  add_255/U1_15/CO (ADDFHX4)                              0.20       5.77 f
+  add_255/U1_16/CO (ADDFHX4)                              0.20       5.97 f
+  add_255/U1_17/CO (ADDFHX4)                              0.20       6.17 f
+  add_255/U1_18/CO (ADDFHX2)                              0.24       6.41 f
+  add_255/U1_19/CO (ADDFHX4)                              0.20       6.61 f
+  add_255/U1_20/CO (ADDFHX1)                              0.30       6.91 f
+  add_255/U1_21/CO (ADDFHX2)                              0.25       7.16 f
+  add_255/U1_22/CO (ADDFHX2)                              0.23       7.39 f
+  add_255/U1_23/CO (ADDFHX2)                              0.25       7.64 f
+  add_255/U1_24/CO (ADDFHX4)                              0.21       7.85 f
+  add_255/U1_25/CO (ADDFHX4)                              0.20       8.06 f
+  add_255/U1_26/CO (ADDFHX4)                              0.20       8.26 f
+  add_255/U1_27/CO (ADDFHX4)                              0.20       8.46 f
+  add_255/U1_28/CO (ADDFHX4)                              0.20       8.67 f
+  add_255/U1_29/CO (ADDFHX4)                              0.20       8.87 f
+  add_255/U1_30/CO (ADDFHX4)                              0.20       9.07 f
+  add_255/U1_31/CO (ADDFHX4)                              0.19       9.27 f
+  add_255/U4/Y (XNOR3X2)                                  0.24       9.50 f
+  add_255/SUM[32] (CONV_DW01_add_12)                      0.00       9.50 f
+  U1147/Y (CLKAND2X8)                                     0.15       9.66 f
+  U1116/Y (NOR3X6)                                        0.13       9.79 r
+  U1160/Y (AND4X8)                                        0.18       9.96 r
+  U782/Y (OAI22X4)                                        0.09      10.05 f
+  kernal_data_reg[32]/D (EDFFXL)                          0.00      10.05 f
+  data arrival time                                                 10.05
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  kernal_data_reg[32]/CK (EDFFXL)                         0.00      10.40 r
+  library setup time                                     -0.34      10.06
+  data required time                                                10.06
+  --------------------------------------------------------------------------
+  data required time                                                10.06
+  data arrival time                                                -10.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CONV
+Version: S-2021.06-SP2
+Date   : Sun Mar 13 23:42:13 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: status_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: kernal_data_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONV               tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  status_reg[0]/CK (DFFRX2)                               0.00       0.50 r
+  status_reg[0]/Q (DFFRX2)                                0.66       1.16 r
+  U1819/Y (NOR2X2)                                        0.18       1.33 f
+  U986/Y (BUFX12)                                         0.23       1.57 f
+  U632/Y (NAND2X6)                                        0.21       1.78 r
+  U646/Y (NAND4X1)                                        0.27       2.04 f
+  U1851/Y (OR2X8)                                         0.38       2.42 f
+  U1429/Y (NAND2X1)                                       0.32       2.74 r
+  U946/Y (INVX1)                                          0.16       2.90 f
+  U1861/Y (NOR2X1)                                        0.43       3.33 r
+  U1892/Y (XNOR2X4)                                       0.33       3.66 f
+  U533/Y (OAI21XL)                                        0.50       4.16 r
+  U2656/Y (XOR2X1)                                        0.40       4.56 r
+  DP_OP_247_154_1153/U443/CO (CMPR42X1)                   0.89       5.45 r
+  DP_OP_247_154_1153/U439/S (CMPR42X2)                    0.73       6.18 f
+  U2185/Y (NOR2X2)                                        0.35       6.53 r
+  U2196/Y (OAI21X4)                                       0.20       6.72 f
+  U2221/Y (AOI21X4)                                       0.39       7.12 r
+  U2241/Y (OAI21X1)                                       0.20       7.32 f
+  U2242/Y (AOI21X1)                                       0.26       7.58 r
+  U2244/Y (XOR2X1)                                        0.28       7.85 r
+  U2253/Y (CLKMX2X2)                                      0.34       8.19 r
+  U2254/Y (NOR2X2)                                        0.14       8.33 f
+  U2273/Y (NOR2X2)                                        0.31       8.64 r
+  U2407/Y (NAND2X2)                                       0.33       8.97 f
+  U1805/Y (NOR2XL)                                        0.45       9.42 r
+  U2428/Y (AOI21X1)                                       0.22       9.64 f
+  U2461/Y (XOR2X1)                                        0.25       9.89 f
+  U2464/Y (AOI222X2)                                      0.25      10.14 r
+  U1578/Y (INVX3)                                         0.10      10.24 f
+  kernal_data_reg[28]/D (DFFHQX8)                         0.00      10.24 f
+  data arrival time                                                 10.24
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  kernal_data_reg[28]/CK (DFFHQX8)                        0.00      10.40 r
+  library setup time                                     -0.15      10.25
+  data required time                                                10.25
+  --------------------------------------------------------------------------
+  data required time                                                10.25
+  data arrival time                                                -10.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CONV
+Version: S-2021.06-SP2
+Date   : Mon Mar 14 01:11:34 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: status_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: kernal_data_reg[32]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONV               tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  status_reg[0]/CK (DFFRX4)                               0.00       0.50 r
+  status_reg[0]/QN (DFFRX4)                               0.26       0.76 f
+  U736/Y (INVX12)                                         0.08       0.84 r
+  U678/Y (INVX8)                                          0.05       0.89 f
+  U701/Y (OR2X8)                                          0.16       1.05 f
+  U673/Y (NOR2X8)                                         0.10       1.15 r
+  U665/Y (INVX8)                                          0.05       1.20 f
+  U823/Y (BUFX20)                                         0.10       1.31 f
+  U930/Y (OA21X4)                                         0.22       1.52 f
+  U627/Y (AND3X8)                                         0.13       1.66 f
+  U650/Y (AND2X8)                                         0.16       1.81 f
+  U931/Y (NAND3X8)                                        0.39       2.20 r
+  mult_246/a[0] (CONV_DW_mult_tc_1)                       0.00       2.20 r
+  mult_246/U1043/Y (XNOR2X1)                              0.39       2.59 f
+  mult_246/U962/Y (OAI22X2)                               0.20       2.79 r
+  mult_246/U938/Y (NAND2X1)                               0.23       3.02 f
+  mult_246/U349/Y (OAI21X4)                               0.26       3.28 r
+  mult_246/U993/Y (INVX8)                                 0.10       3.37 f
+  mult_246/U342/Y (OAI21X4)                               0.13       3.51 r
+  mult_246/U333/Y (XNOR2X4)                               0.21       3.71 f
+  mult_246/product[4] (CONV_DW_mult_tc_1)                 0.00       3.71 f
+  add_246/B[1] (CONV_DW01_add_0)                          0.00       3.71 f
+  add_246/U5/Y (NAND2X6)                                  0.13       3.85 r
+  add_246/U7/Y (NAND3X8)                                  0.07       3.92 f
+  add_246/U1_2/CO (ADDFHX4)                               0.20       4.12 f
+  add_246/U1_3/CO (ADDFHX4)                               0.20       4.32 f
+  add_246/U1_4/CO (ADDFHX4)                               0.20       4.53 f
+  add_246/U1_5/CO (ADDFHX4)                               0.20       4.73 f
+  add_246/U1_6/CO (ADDFHX4)                               0.20       4.94 f
+  add_246/U1_7/CO (ADDFHX4)                               0.20       5.14 f
+  add_246/U1_8/CO (ADDFHX4)                               0.20       5.34 f
+  add_246/U1_9/CO (ADDFHX4)                               0.20       5.55 f
+  add_246/U1_10/CO (ADDFHX4)                              0.20       5.75 f
+  add_246/U1_11/CO (ADDFHX4)                              0.20       5.95 f
+  add_246/U1_12/CO (ADDFHX4)                              0.20       6.16 f
+  add_246/U1_13/CO (ADDFHX4)                              0.20       6.36 f
+  add_246/U1_14/CO (ADDFHX4)                              0.20       6.56 f
+  add_246/U1_15/CO (ADDFHX4)                              0.20       6.77 f
+  add_246/U1_16/CO (ADDFHX4)                              0.20       6.97 f
+  add_246/U1_17/CO (ADDFHX4)                              0.20       7.17 f
+  add_246/U1_18/CO (ADDFHX4)                              0.20       7.38 f
+  add_246/U1_19/CO (ADDFHX4)                              0.20       7.58 f
+  add_246/U1_20/CO (ADDFHX4)                              0.20       7.78 f
+  add_246/U1_21/CO (ADDFHX4)                              0.20       7.99 f
+  add_246/U1_22/CO (ADDFHX4)                              0.20       8.19 f
+  add_246/U1_23/CO (ADDFHX4)                              0.20       8.39 f
+  add_246/U1_24/CO (ADDFHX4)                              0.20       8.60 f
+  add_246/U1_25/CO (ADDFHX4)                              0.20       8.80 f
+  add_246/U1_26/CO (ADDFHX4)                              0.20       9.00 f
+  add_246/U1_27/CO (ADDFHX4)                              0.20       9.21 f
+  add_246/U1_28/CO (ADDFHX4)                              0.20       9.41 f
+  add_246/U1_29/CO (ADDFHX4)                              0.20       9.61 f
+  add_246/U1_30/CO (ADDFHX4)                              0.20       9.82 f
+  add_246/U1_31/CO (ADDFHX4)                              0.21      10.02 f
+  add_246/U1_32/Y (XOR3X4)                                0.22      10.25 r
+  add_246/SUM[32] (CONV_DW01_add_0)                       0.00      10.25 r
+  kernal_data_reg[32]/D (DFFTRX4)                         0.00      10.25 r
+  data arrival time                                                 10.25
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  kernal_data_reg[32]/CK (DFFTRX4)                        0.00      10.40 r
+  library setup time                                     -0.15      10.25
+  data required time                                                10.25
+  --------------------------------------------------------------------------
+  data required time                                                10.25
+  data arrival time                                                -10.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CONV
+Version: S-2021.06-SP2
+Date   : Mon Mar 14 01:14:41 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: status_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cdata_wr_reg[18]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONV               tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  status_reg[0]/CK (DFFRX1)                0.00       0.50 r
+  status_reg[0]/QN (DFFRX1)                0.69       1.19 r
+  U1568/Y (NOR3X4)                         0.23       1.42 f
+  U1582/Y (AND2X8)                         0.22       1.63 f
+  U883/Y (INVX16)                          0.16       1.80 r
+  U574/CO (ADDHXL)                         0.33       2.13 r
+  U682/CO (ADDHXL)                         0.35       2.48 r
+  U557/CO (ADDFXL)                         0.52       3.00 r
+  U861/CO (ADDHX1)                         0.37       3.37 r
+  U858/Y (OR2X1)                           0.27       3.64 r
+  U2121/CO (ADDHXL)                        0.34       3.98 r
+  U2123/CO (ADDHXL)                        0.36       4.34 r
+  U837/CO (ADDFX2)                         0.33       4.67 r
+  U680/CO (ADDFXL)                         0.62       5.29 r
+  U518/Y (OR2X1)                           0.28       5.58 r
+  U516/CO (ADDHXL)                         0.34       5.91 r
+  U504/CO (ADDHXL)                         0.53       6.44 r
+  U2132/Y (XNOR2X1)                        0.40       6.84 r
+  U2133/CO (ADDHXL)                        0.34       7.18 r
+  U2134/CO (ADDHXL)                        0.32       7.50 r
+  U2135/CO (ADDHXL)                        0.32       7.82 r
+  U2136/CO (ADDHXL)                        0.32       8.14 r
+  U2137/CO (ADDHXL)                        0.32       8.47 r
+  U2138/CO (ADDHXL)                        0.32       8.79 r
+  U1566/S (ADDHXL)                         0.40       9.19 f
+  U698/Y (AOI222XL)                        0.71       9.91 r
+  U1002/Y (INVX1)                          0.19      10.10 f
+  cdata_wr_reg[18]/D (DFFQX1)              0.00      10.10 f
+  data arrival time                                  10.10
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.50      10.50
+  clock uncertainty                       -0.10      10.40
+  cdata_wr_reg[18]/CK (DFFQX1)             0.00      10.40 r
+  library setup time                      -0.29      10.11
+  data required time                                 10.11
+  -----------------------------------------------------------
+  data required time                                 10.11
+  data arrival time                                 -10.10
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CONV
+Version: S-2021.06-SP2
+Date   : Fri Mar 18 14:41:06 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: status_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: kernal_data_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONV               tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  status_reg[2]/CK (DFFRX1)                               0.00       0.50 r
+  status_reg[2]/QN (DFFRX1)                               0.48       0.98 r
+  U741/Y (NAND3BX4)                                       0.18       1.16 f
+  U468/Y (CLKINVX6)                                       0.11       1.27 r
+  U462/Y (CLKAND2X8)                                      0.29       1.56 r
+  U473/Y (BUFX16)                                         0.18       1.74 r
+  U476/Y (INVX12)                                         0.09       1.83 f
+  U457/Y (NAND2BX2)                                       0.20       2.03 r
+  U426/Y (INVX3)                                          0.16       2.19 f
+  U558/Y (AOI2BB1X2)                                      0.15       2.34 r
+  U438/Y (NAND4X1)                                        0.21       2.55 f
+  mult_246/a[5] (CONV_DW_mult_tc_2)                       0.00       2.55 f
+  mult_246/U1384/Y (CLKBUFX3)                             0.43       2.97 f
+  mult_246/U1986/Y (NAND2X1)                              0.37       3.35 r
+  mult_246/U1704/Y (OAI21X2)                              0.21       3.56 f
+  mult_246/U1785/Y (CLKINVX1)                             0.21       3.76 r
+  mult_246/U1620/Y (INVXL)                                0.19       3.95 f
+  mult_246/U1197/Y (AOI21X2)                              0.19       4.14 r
+  mult_246/U1292/Y (XNOR2X2)                              0.35       4.50 f
+  mult_246/U1538/Y (OAI21X1)                              0.34       4.84 r
+  mult_246/U2060/Y (XOR2X1)                               0.34       5.18 r
+  mult_246/U2059/CO (CMPR42X1)                            0.87       6.04 r
+  mult_246/U1302/ICO (CMPR42X1)                           0.27       6.32 r
+  mult_246/U2055/S (CMPR42X1)                             0.53       6.85 r
+  mult_246/U1985/Y (NOR2X2)                               0.23       7.08 f
+  mult_246/U1357/Y (NOR2X2)                               0.30       7.39 r
+  mult_246/U1378/Y (AND2X2)                               0.31       7.69 r
+  mult_246/U1201/Y (CLKINVX8)                             0.16       7.86 f
+  mult_246/U1693/Y (NOR2XL)                               0.35       8.20 r
+  mult_246/U1709/Y (AO21XL)                               0.45       8.65 r
+  mult_246/U1632/Y (XNOR2X4)                              0.27       8.92 f
+  mult_246/product[28] (CONV_DW_mult_tc_2)                0.00       8.92 f
+  add_246/B[25] (CONV_DW01_add_9)                         0.00       8.92 f
+  add_246/U320/Y (NAND2X8)                                0.13       9.05 r
+  add_246/U319/Y (OAI21X4)                                0.15       9.20 f
+  add_246/U387/Y (AOI21X4)                                0.25       9.44 r
+  add_246/U427/Y (INVXL)                                  0.18       9.63 f
+  add_246/U488/Y (AOI21X1)                                0.26       9.89 r
+  add_246/U486/Y (XOR2X1)                                 0.26      10.14 r
+  add_246/SUM[29] (CONV_DW01_add_9)                       0.00      10.14 r
+  kernal_data_reg[29]/D (DFFTRX1)                         0.00      10.14 r
+  data arrival time                                                 10.14
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  kernal_data_reg[29]/CK (DFFTRX1)                        0.00      10.40 r
+  library setup time                                     -0.26      10.14
+  data required time                                                10.14
+  --------------------------------------------------------------------------
+  data required time                                                10.14
+  data arrival time                                                -10.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CONV
+Version: S-2021.06-SP2
+Date   : Fri Mar 18 14:47:02 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: status_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: kernal_data_reg[32]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONV               tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  status_reg[0]/CK (DFFRX1)                               0.00       0.50 r
+  status_reg[0]/Q (DFFRX1)                                0.89       1.39 f
+  U435/Y (NAND2XL)                                        0.80       2.19 r
+  U788/Y (NOR3X1)                                         0.31       2.51 f
+  U542/Y (CLKBUFX3)                                       0.84       3.35 f
+  U645/Y (NOR2X1)                                         0.68       4.03 r
+  U648/Y (NOR2X1)                                         0.22       4.25 f
+  U646/Y (NAND4X1)                                        0.25       4.50 r
+  mult_246/a[2] (CONV_DW_mult_tc_0)                       0.00       4.50 r
+  mult_246/U856/Y (CLKBUFX3)                              0.72       5.22 r
+  mult_246/U832/Y (CLKINVX1)                              0.65       5.87 f
+  mult_246/U1054/Y (XOR2X1)                               0.47       6.35 f
+  mult_246/U1050/Y (NOR2X1)                               0.83       7.18 r
+  mult_246/U790/Y (CLKINVX1)                              0.28       7.46 f
+  mult_246/U789/Y (CLKBUFX3)                              0.77       8.23 f
+  mult_246/U987/Y (OAI22XL)                               0.59       8.82 r
+  mult_246/U986/Y (XNOR2X1)                               0.39       9.21 r
+  mult_246/U222/S (ADDHXL)                                0.37       9.57 f
+  mult_246/U135/CO (ADDFXL)                               0.81      10.38 f
+  mult_246/U134/CO (ADDFXL)                               0.53      10.91 f
+  mult_246/U133/CO (ADDFXL)                               0.53      11.44 f
+  mult_246/U132/CO (ADDFXL)                               0.53      11.97 f
+  mult_246/U131/CO (ADDFXL)                               0.53      12.49 f
+  mult_246/U130/CO (ADDFXL)                               0.53      13.02 f
+  mult_246/U129/CO (ADDFXL)                               0.53      13.55 f
+  mult_246/U128/CO (ADDFXL)                               0.53      14.08 f
+  mult_246/U127/CO (ADDFXL)                               0.53      14.60 f
+  mult_246/U126/CO (ADDFXL)                               0.53      15.13 f
+  mult_246/U125/CO (ADDFXL)                               0.53      15.66 f
+  mult_246/U124/CO (ADDFXL)                               0.53      16.18 f
+  mult_246/U123/CO (ADDFXL)                               0.53      16.71 f
+  mult_246/U122/CO (ADDFXL)                               0.53      17.24 f
+  mult_246/U121/CO (ADDFXL)                               0.53      17.77 f
+  mult_246/U120/CO (ADDFXL)                               0.53      18.29 f
+  mult_246/U119/CO (ADDFXL)                               0.53      18.82 f
+  mult_246/U118/CO (ADDFXL)                               0.53      19.35 f
+  mult_246/U117/CO (ADDFXL)                               0.53      19.88 f
+  mult_246/U116/CO (ADDFXL)                               0.53      20.40 f
+  mult_246/U115/CO (ADDFXL)                               0.53      20.93 f
+  mult_246/U114/CO (ADDFXL)                               0.53      21.46 f
+  mult_246/U113/CO (ADDFXL)                               0.53      21.99 f
+  mult_246/U112/CO (ADDFXL)                               0.53      22.51 f
+  mult_246/U111/CO (ADDFXL)                               0.53      23.04 f
+  mult_246/U110/CO (ADDFXL)                               0.53      23.57 f
+  mult_246/U109/CO (ADDFXL)                               0.53      24.10 f
+  mult_246/U108/CO (ADDFXL)                               0.53      24.62 f
+  mult_246/U107/CO (ADDFXL)                               0.52      25.15 f
+  mult_246/U922/Y (XOR2X1)                                0.28      25.42 r
+  mult_246/U921/Y (XOR2X1)                                0.64      26.06 r
+  mult_246/product[32] (CONV_DW_mult_tc_0)                0.00      26.06 r
+  add_246/B[29] (CONV_DW01_add_0)                         0.00      26.06 r
+  add_246/U1_29/CO (ADDFXL)                               0.95      27.01 r
+  add_246/U1_30/CO (ADDFXL)                               0.50      27.51 r
+  add_246/U1_31/CO (ADDFXL)                               0.50      28.01 r
+  add_246/U1_32/Y (XOR3XL)                                0.47      28.48 r
+  add_246/SUM[32] (CONV_DW01_add_0)                       0.00      28.48 r
+  kernal_data_reg[32]/D (DFFTRX1)                         0.00      28.48 r
+  data arrival time                                                 28.48
+
+  clock clk (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             0.50      30.50
+  clock uncertainty                                      -0.10      30.40
+  kernal_data_reg[32]/CK (DFFTRX1)                        0.00      30.40 r
+  library setup time                                     -0.25      30.15
+  data required time                                                30.15
+  --------------------------------------------------------------------------
+  data required time                                                30.15
+  data arrival time                                                -28.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.66
+
+
+1

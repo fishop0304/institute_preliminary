@@ -1,0 +1,352 @@
+Error: Current design is not defined. (UID-4)
+0
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : CONV
+Version: S-2021.06-SP2
+Date   : Sun Mar 13 23:33:10 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: nom_pvt   Library: dw_foundation.sldb
+Wire Load Model Mode: top
+
+  Startpoint: status_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: caddr_wr_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  status_reg[4]/clocked_on (**SEQGEN**)                   0.00       0.50 r
+  status_reg[4]/Q (**SEQGEN**)                            0.00       0.50 f
+  I_31/Z (GTECH_NOT)                                      0.00       0.50 r
+  C323/Z (GTECH_AND2)                                     0.00       0.50 r
+  B_37/Z (GTECH_BUF)                                      0.00       0.50 r
+  C1915/Z_0 (*SELECT_OP_2.12_2.1_12)                      0.00       0.50 r
+  caddr_wr_reg[0]/next_state (**SEQGEN**)                 0.00       0.50 r
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  clock uncertainty                                       0.10       0.60
+  caddr_wr_reg[0]/clocked_on (**SEQGEN**)                 0.00       0.60 r
+  library hold time                                       0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.10
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : CONV
+Version: S-2021.06-SP2
+Date   : Sun Mar 13 23:34:47 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: kernal_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cdata_wr_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONV               tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  kernal_reg[2]/CK (EDFFX4)                0.00       0.50 r
+  kernal_reg[2]/QN (EDFFX4)                0.40       0.90 f
+  U785/Y (CLKINVX20)                       0.24       1.14 r
+  U338/Y (AOI222XL)                        0.24       1.38 f
+  U337/Y (CLKINVX1)                        0.16       1.54 r
+  cdata_wr_reg[2]/D (DFFX1)                0.00       1.54 r
+  data arrival time                                   1.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  cdata_wr_reg[2]/CK (DFFX1)               0.00       0.60 r
+  library hold time                       -0.10       0.50
+  data required time                                  0.50
+  -----------------------------------------------------------
+  data required time                                  0.50
+  data arrival time                                  -1.54
+  -----------------------------------------------------------
+  slack (MET)                                         1.04
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : CONV
+Version: S-2021.06-SP2
+Date   : Sun Mar 13 23:42:13 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: kernal_data_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: kernal_data_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONV               tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  kernal_data_reg[28]/CK (DFFHQX8)         0.00       0.50 r
+  kernal_data_reg[28]/Q (DFFHQX8)          0.23       0.73 r
+  U2464/Y (AOI222X2)                       0.17       0.90 f
+  U1578/Y (INVX3)                          0.10       1.00 r
+  kernal_data_reg[28]/D (DFFHQX8)          0.00       1.00 r
+  data arrival time                                   1.00
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  kernal_data_reg[28]/CK (DFFHQX8)         0.00       0.60 r
+  library hold time                       -0.03       0.57
+  data required time                                  0.57
+  -----------------------------------------------------------
+  data required time                                  0.57
+  data arrival time                                  -1.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : CONV
+Version: S-2021.06-SP2
+Date   : Mon Mar 14 01:11:34 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: kernal_data_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: kernal_data_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONV               tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  kernal_data_reg[0]/CK (DFFTRX4)          0.00       0.50 r
+  kernal_data_reg[0]/Q (DFFTRX4)           0.39       0.89 r
+  add_246/A[0] (CONV_DW01_add_0)           0.00       0.89 r
+  add_246/U9/Y (XOR2X4)                    0.12       1.00 f
+  add_246/SUM[0] (CONV_DW01_add_0)         0.00       1.00 f
+  kernal_data_reg[0]/D (DFFTRX4)           0.00       1.00 f
+  data arrival time                                   1.00
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  kernal_data_reg[0]/CK (DFFTRX4)          0.00       0.60 r
+  library hold time                        0.00       0.60
+  data required time                                  0.60
+  -----------------------------------------------------------
+  data required time                                  0.60
+  data arrival time                                  -1.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.40
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : CONV
+Version: S-2021.06-SP2
+Date   : Mon Mar 14 01:14:41 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: count_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONV               tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  count_reg[0]/CK (DFFHQX4)                0.00       0.50 r
+  count_reg[0]/Q (DFFHQX4)                 0.36       0.86 r
+  U2031/Y (NOR2XL)                         0.21       1.07 f
+  count_reg[0]/D (DFFHQX4)                 0.00       1.07 f
+  data arrival time                                   1.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  count_reg[0]/CK (DFFHQX4)                0.00       0.60 r
+  library hold time                       -0.11       0.49
+  data required time                                  0.49
+  -----------------------------------------------------------
+  data required time                                  0.49
+  data arrival time                                  -1.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.58
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : CONV
+Version: S-2021.06-SP2
+Date   : Fri Mar 18 14:41:06 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: count_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONV               tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  count_reg[0]/CK (DFFHQX4)                0.00       0.50 r
+  count_reg[0]/Q (DFFHQX4)                 0.23       0.73 f
+  U480/Y (CLKINVX6)                        0.12       0.85 r
+  U882/Y (AND2X2)                          0.21       1.06 r
+  count_reg[0]/D (DFFHQX4)                 0.00       1.06 r
+  data arrival time                                   1.06
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  count_reg[0]/CK (DFFHQX4)                0.00       0.60 r
+  library hold time                       -0.05       0.55
+  data required time                                  0.55
+  -----------------------------------------------------------
+  data required time                                  0.55
+  data arrival time                                  -1.06
+  -----------------------------------------------------------
+  slack (MET)                                         0.51
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : CONV
+Version: S-2021.06-SP2
+Date   : Fri Mar 18 14:47:02 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: kernal_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cdata_wr_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONV               tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  kernal_reg[2]/CK (DFFX2)                 0.00       0.50 r
+  kernal_reg[2]/QN (DFFX2)                 0.34       0.84 r
+  U873/Y (OAI221XL)                        0.27       1.11 f
+  cdata_wr_reg[2]/D (DFFQX1)               0.00       1.11 f
+  data arrival time                                   1.11
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  cdata_wr_reg[2]/CK (DFFQX1)              0.00       0.60 r
+  library hold time                       -0.14       0.46
+  data required time                                  0.46
+  -----------------------------------------------------------
+  data required time                                  0.46
+  data arrival time                                  -1.11
+  -----------------------------------------------------------
+  slack (MET)                                         0.66
+
+
+1
