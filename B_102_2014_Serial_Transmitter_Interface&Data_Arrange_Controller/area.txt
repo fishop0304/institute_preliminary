@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : area
+Design : STI_DAC
+Version: S-2021.06-SP2
+Date   : Thu Mar 17 23:08:59 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           49
+Number of nets:                           557
+Number of cells:                          488
+Number of combinational cells:            426
+Number of sequential cells:                60
+Number of macros/black boxes:               0
+Number of buf/inv:                         71
+Number of references:                      56
+
+Combinational area:               3421.958429
+Buf/Inv area:                      553.352397
+Noncombinational area:            1946.917753
+Macro/Black Box area:                0.000000
+Net Interconnect area:           68880.342377
+
+Total cell area:                  5368.876182
+Total area:                      74249.218559
+1
+ 
+****************************************
+Report : area
+Design : STI_DAC
+Version: S-2021.06-SP2
+Date   : Thu Mar 17 23:09:53 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           49
+Number of nets:                           550
+Number of cells:                          482
+Number of combinational cells:            420
+Number of sequential cells:                60
+Number of macros/black boxes:               0
+Number of buf/inv:                         72
+Number of references:                      59
+
+Combinational area:               3408.379230
+Buf/Inv area:                      556.747195
+Noncombinational area:            1950.312555
+Macro/Black Box area:                0.000000
+Net Interconnect area:           68460.340302
+
+Total cell area:                  5358.691786
+Total area:                      73819.032087
+1

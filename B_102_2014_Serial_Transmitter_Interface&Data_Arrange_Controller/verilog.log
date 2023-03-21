@@ -1,0 +1,48 @@
+TOOL:	xmverilog	20.09-s007: Started on Mar 15, 2022 at 20:31:30 CST
+xmverilog(64): 20.09-s007: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+xmverilog: *W,NCEXDEP: Executable (ncverilog) is deprecated. Use (xmverilog) instead.
+file: STI_DAC.v
+	module worklib.STI_DAC:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.STI_DAC:v <0x6e779408>
+			streams:   6, words:  1569
+		worklib.testfixture1:v <0x47e46f94>
+			streams:  27, words: 57554
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:               67      67
+		Scalar wires:            17       -
+		Vectored wires:           6       -
+		Always blocks:           14      14
+		Initial blocks:          12      12
+		Cont. assignments:        1       5
+		Pseudo assignments:       3       3
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.testfixture1:v
+Loading snapshot worklib.testfixture1:v .................... Done
+*Verdi* Loading libsscore_xcelium.so
+xcelium> source /usr/cad/cadence/XCELIUM/XCELIUM_20.09.007/tools/xcelium/files/xmsimrc
+xcelium> run
+--------------------------- Simulation Pattern is ready !!---------------------------
+FSDB Dumper for Xcelium, Release Verdi_S-2021.09, Linux x86_64/64bit, 08/29/2021
+(C) 1996 - 2021 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'STI_DAC.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+--------------------------- [ testfuxture1.v ] Simulation START !!---------------------------
+--------------------------- Simulation at parallel data input stage !!---------------------------
+================================================================================================================
+--------------------------- (/`n`)/ ~#  There was something wrong with your code !! ---------------------------
+--------------------------- The simulation can't finished!!, Please check it !!! ---------------------------
+================================================================================================================
+Simulation complete via $finish(1) at time 100 US + 0
+./testfixture1.v:206 	$finish;
+xcelium> exit
+TOOL:	xmverilog	20.09-s007: Exiting on Mar 15, 2022 at 20:31:31 CST  (total: 00:00:01)
