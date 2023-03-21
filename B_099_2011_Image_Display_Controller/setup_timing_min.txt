@@ -1,0 +1,515 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Fri Jan 21 02:31:22 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: nom_pvt   Library: gtech
+Wire Load Model Mode: top
+
+  Startpoint: IRB_A_reg[0]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: IRB_A_reg[0]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  IRB_A_reg[0]/clocked_on (**SEQGEN**)                    0.00       1.00 r
+  IRB_A_reg[0]/Q (**SEQGEN**)                             0.00       1.00 f
+  add_158_S2/A_0 (*ADD_UNS_OP_6_1_6)                      0.00       1.00 f
+  add_158_S2/*cell*34/A[0] (DW01_inc_width6)              0.00       1.00 f
+  ...
+  add_158_S2/*cell*34/SUM[0] (DW01_inc_width6)            0.00       1.00 r
+  add_158_S2/Z_0 (*ADD_UNS_OP_6_1_6)                      0.00       1.00 r
+  C28781/Z_0 (*SELECT_OP_2.6_2.1_6)                       0.00       1.00 r
+  IRB_A_reg[0]/next_state (**SEQGEN**)                    0.00       1.00 r
+  data arrival time                                                  1.00
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       1.00       2.00
+  IRB_A_reg[0]/clocked_on (**SEQGEN**)                    0.00       2.00 r
+  library hold time                                       0.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.00
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Fri Jan 21 02:32:10 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: nom_pvt   Library: dw_foundation.sldb
+Wire Load Model Mode: top
+
+  Startpoint: IRB_A_reg[0]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: IRB_A_reg[0]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  IRB_A_reg[0]/clocked_on (**SEQGEN**)                    0.00       1.00 r
+  IRB_A_reg[0]/Q (**SEQGEN**)                             0.00       1.00 f
+  add_158_S2/A_0 (*ADD_UNS_OP_6_1_6)                      0.00       1.00 f
+  add_158_S2/*cell*34/A[0] (DW01_inc_width6)              0.00       1.00 f
+  ...
+  add_158_S2/*cell*34/SUM[0] (DW01_inc_width6)            0.00       1.00 r
+  add_158_S2/Z_0 (*ADD_UNS_OP_6_1_6)                      0.00       1.00 r
+  C28781/Z_0 (*SELECT_OP_2.6_2.1_6)                       0.00       1.00 r
+  IRB_A_reg[0]/next_state (**SEQGEN**)                    0.00       1.00 r
+  data arrival time                                                  1.00
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       1.00       2.00
+  IRB_A_reg[0]/clocked_on (**SEQGEN**)                    0.00       2.00 r
+  library hold time                                       0.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.00
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Fri Jan 21 02:34:10 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: nom_pvt   Library: dw_foundation.sldb
+Wire Load Model Mode: top
+
+  Startpoint: IRB_A_reg[0]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: IRB_A_reg[0]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  IRB_A_reg[0]/clocked_on (**SEQGEN**)                    0.00       1.00 r
+  IRB_A_reg[0]/Q (**SEQGEN**)                             0.00       1.00 f
+  add_158_S2/A_0 (*ADD_UNS_OP_6_1_6)                      0.00       1.00 f
+  add_158_S2/*cell*34/A[0] (DW01_inc_width6)              0.00       1.00 f
+  ...
+  add_158_S2/*cell*34/SUM[0] (DW01_inc_width6)            0.00       1.00 r
+  add_158_S2/Z_0 (*ADD_UNS_OP_6_1_6)                      0.00       1.00 r
+  C28781/Z_0 (*SELECT_OP_2.6_2.1_6)                       0.00       1.00 r
+  IRB_A_reg[0]/next_state (**SEQGEN**)                    0.00       1.00 r
+  data arrival time                                                  1.00
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       1.00       2.00
+  IRB_A_reg[0]/clocked_on (**SEQGEN**)                    0.00       2.00 r
+  library hold time                                       0.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.00
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.00
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Fri Jan 21 12:53:06 2022
+****************************************
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: top
+
+  Startpoint: date_reg[14][5]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: date_reg[14][5]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  date_reg[14][5]/CK (DFFRX4)              0.00       1.00 r
+  date_reg[14][5]/QN (DFFRX4)              0.30       1.30 r
+  U3526/Y (INVXL)                          0.12       1.43 f
+  U3527/Y (CLKINVX1)                       0.13       1.56 r
+  U3530/Y (MXI2X1)                         0.25       1.81 f
+  U3529/Y (INVX8)                          0.09       1.89 r
+  U3528/Y (INVXL)                          0.13       2.02 f
+  date_reg[14][5]/D (DFFRX4)               0.00       2.02 f
+  data arrival time                                   2.02
+
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  clock uncertainty                        1.00       2.00
+  date_reg[14][5]/CK (DFFRX4)              0.00       2.00 r
+  library hold time                        0.02       2.02
+  data required time                                  2.02
+  -----------------------------------------------------------
+  data required time                                  2.02
+  data arrival time                                  -2.02
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
+Error: Current design is not defined. (UID-4)
+0
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Sun Jan 23 23:25:00 2022
+****************************************
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: top
+
+  Startpoint: date_reg[63][5]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: date_reg[63][5]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  date_reg[63][5]/CK (DFFRX4)              0.00       1.00 r
+  date_reg[63][5]/Q (DFFRX4)               0.56       1.56 f
+  U4392/Y (CLKINVX1)                       0.14       1.69 r
+  U4393/Y (CLKINVX1)                       0.13       1.83 f
+  U5330/Y (CLKMX2X3)                       0.21       2.04 f
+  date_reg[63][5]/D (DFFRX4)               0.00       2.04 f
+  data arrival time                                   2.04
+
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  clock uncertainty                        1.00       2.00
+  date_reg[63][5]/CK (DFFRX4)              0.00       2.00 r
+  library hold time                        0.03       2.03
+  data required time                                  2.03
+  -----------------------------------------------------------
+  data required time                                  2.03
+  data arrival time                                  -2.04
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Mon Jan 24 23:25:45 2022
+****************************************
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: top
+
+  Startpoint: date_reg[63][5]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: date_reg[63][5]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  date_reg[63][5]/CK (DFFRX4)              0.00       1.00 r
+  date_reg[63][5]/Q (DFFRX4)               0.56       1.56 f
+  U4392/Y (CLKINVX1)                       0.14       1.69 r
+  U4393/Y (CLKINVX1)                       0.13       1.83 f
+  U5330/Y (CLKMX2X3)                       0.21       2.04 f
+  date_reg[63][5]/D (DFFRX4)               0.00       2.04 f
+  data arrival time                                   2.04
+
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  clock uncertainty                        1.00       2.00
+  date_reg[63][5]/CK (DFFRX4)              0.00       2.00 r
+  library hold time                        0.03       2.03
+  data required time                                  2.03
+  -----------------------------------------------------------
+  data required time                                  2.03
+  data arrival time                                  -2.04
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Tue Jan 25 00:02:18 2022
+****************************************
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: top
+
+  Startpoint: date_reg[15][7]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: date_reg[15][7]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  date_reg[15][7]/CK (DFFRX4)              0.00       1.00 r
+  date_reg[15][7]/Q (DFFRX4)               0.46       1.46 r
+  U3500/Y (MX2X1)                          0.28       1.74 r
+  U3499/Y (CLKBUFX3)                       0.18       1.92 r
+  date_reg[15][7]/D (DFFRX4)               0.00       1.92 r
+  data arrival time                                   1.92
+
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  clock uncertainty                        1.00       2.00
+  date_reg[15][7]/CK (DFFRX4)              0.00       2.00 r
+  library hold time                       -0.09       1.91
+  data required time                                  1.91
+  -----------------------------------------------------------
+  data required time                                  1.91
+  data arrival time                                  -1.92
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Tue Jan 25 00:22:36 2022
+****************************************
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: top
+
+  Startpoint: date_reg[15][7]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: date_reg[15][7]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  date_reg[15][7]/CK (DFFRX4)              0.00       1.00 r
+  date_reg[15][7]/Q (DFFRX4)               0.46       1.46 r
+  U3507/Y (MX2X1)                          0.28       1.74 r
+  U3506/Y (CLKBUFX3)                       0.18       1.92 r
+  date_reg[15][7]/D (DFFRX4)               0.00       1.92 r
+  data arrival time                                   1.92
+
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  clock uncertainty                        1.00       2.00
+  date_reg[15][7]/CK (DFFRX4)              0.00       2.00 r
+  library hold time                       -0.09       1.91
+  data required time                                  1.91
+  -----------------------------------------------------------
+  data required time                                  1.91
+  data arrival time                                  -1.92
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Tue Jan 25 00:32:42 2022
+****************************************
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: top
+
+  Startpoint: date_reg[49][0]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: date_reg[49][0]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  date_reg[49][0]/CK (DFFRX4)              0.00       1.00 r
+  date_reg[49][0]/Q (DFFRX4)               0.55       1.55 f
+  U4072/Y (CLKMX2X2)                       0.24       1.78 f
+  U4073/Y (CLKINVX1)                       0.11       1.90 r
+  U4074/Y (CLKINVX1)                       0.13       2.03 f
+  date_reg[49][0]/D (DFFRX4)               0.00       2.03 f
+  data arrival time                                   2.03
+
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  clock uncertainty                        1.00       2.00
+  date_reg[49][0]/CK (DFFRX4)              0.00       2.00 r
+  library hold time                        0.03       2.03
+  data required time                                  2.03
+  -----------------------------------------------------------
+  data required time                                  2.03
+  data arrival time                                  -2.03
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Tue Jan 25 00:56:27 2022
+****************************************
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: top
+
+  Startpoint: IROM_A_reg[0]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: IROM_A_reg[0]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  IROM_A_reg[0]/CK (DFFRXL)                0.00       1.00 r
+  IROM_A_reg[0]/QN (DFFRXL)                0.41       1.41 f
+  U57/Y (AND2XL)                           0.29       1.70 f
+  U55/Y (CLKINVX1)                         0.14       1.83 r
+  U56/Y (CLKINVX1)                         0.12       1.95 f
+  IROM_A_reg[0]/D (DFFRXL)                 0.00       1.95 f
+  data arrival time                                   1.95
+
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  clock uncertainty                        1.00       2.00
+  IROM_A_reg[0]/CK (DFFRXL)                0.00       2.00 r
+  library hold time                       -0.07       1.93
+  data required time                                  1.93
+  -----------------------------------------------------------
+  data required time                                  1.93
+  data arrival time                                  -1.95
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+1

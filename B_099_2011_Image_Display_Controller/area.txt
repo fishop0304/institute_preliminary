@@ -1,0 +1,308 @@
+ 
+****************************************
+Report : area
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Fri Jan 21 02:31:22 2022
+****************************************
+
+Library(s) Used:
+
+    gtech (File: /usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db)
+
+Number of ports:                          394
+Number of nets:                          9988
+Number of cells:                         5647
+Number of combinational cells:           4086
+Number of sequential cells:              1528
+Number of macros/black boxes:               0
+Number of buf/inv:                       2195
+Number of references:                      29
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                     0.000000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+1
+ 
+****************************************
+Report : area
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Fri Jan 21 02:32:10 2022
+****************************************
+
+Library(s) Used:
+
+    gtech (File: /usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db)
+
+Number of ports:                          394
+Number of nets:                          9988
+Number of cells:                         5647
+Number of combinational cells:           4086
+Number of sequential cells:              1528
+Number of macros/black boxes:               0
+Number of buf/inv:                       2195
+Number of references:                      29
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                     0.000000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+1
+ 
+****************************************
+Report : area
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Fri Jan 21 02:34:10 2022
+****************************************
+
+Library(s) Used:
+
+    gtech (File: /usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db)
+
+Number of ports:                          394
+Number of nets:                          9988
+Number of cells:                         5647
+Number of combinational cells:           4086
+Number of sequential cells:              1528
+Number of macros/black boxes:               0
+Number of buf/inv:                       2195
+Number of references:                      29
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                     0.000000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+1
+ 
+****************************************
+Report : area
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Fri Jan 21 12:53:06 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                          148
+Number of nets:                          8252
+Number of cells:                         8022
+Number of combinational cells:           7473
+Number of sequential cells:               540
+Number of macros/black boxes:               0
+Number of buf/inv:                       1945
+Number of references:                     105
+
+Combinational area:             119748.176682
+Buf/Inv area:                    22145.978002
+Noncombinational area:           24817.684772
+Macro/Black Box area:                0.000000
+Net Interconnect area:         1105865.630920
+
+Total cell area:                144565.861454
+Total area:                    1250431.492375
+1
+Error: Current design is not defined. (UID-4)
+0
+ 
+****************************************
+Report : area
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Sun Jan 23 23:25:00 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                          148
+Number of nets:                          8358
+Number of cells:                         8123
+Number of combinational cells:           7573
+Number of sequential cells:               540
+Number of macros/black boxes:               0
+Number of buf/inv:                       2051
+Number of references:                     112
+
+Combinational area:             121521.959610
+Buf/Inv area:                    24041.973766
+Noncombinational area:           25158.862202
+Macro/Black Box area:                0.000000
+Net Interconnect area:         1110345.646088
+
+Total cell area:                146680.821811
+Total area:                    1257026.467899
+1
+ 
+****************************************
+Report : area
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Mon Jan 24 23:25:45 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                          148
+Number of nets:                          8358
+Number of cells:                         8123
+Number of combinational cells:           7573
+Number of sequential cells:               540
+Number of macros/black boxes:               0
+Number of buf/inv:                       2051
+Number of references:                     112
+
+Combinational area:             121521.959610
+Buf/Inv area:                    24041.973766
+Noncombinational area:           25158.862202
+Macro/Black Box area:                0.000000
+Net Interconnect area:         1110345.646088
+
+Total cell area:                146680.821811
+Total area:                    1257026.467899
+1
+ 
+****************************************
+Report : area
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Tue Jan 25 00:02:18 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                          148
+Number of nets:                          8178
+Number of cells:                         7957
+Number of combinational cells:           7390
+Number of sequential cells:               540
+Number of macros/black boxes:               0
+Number of buf/inv:                       1820
+Number of references:                     123
+
+Combinational area:             122275.605296
+Buf/Inv area:                    23593.860187
+Noncombinational area:           24316.951790
+Macro/Black Box area:                0.000000
+Net Interconnect area:         1103672.273956
+
+Total cell area:                146592.557086
+Total area:                    1250264.831042
+1
+ 
+****************************************
+Report : area
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Tue Jan 25 00:22:36 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                          148
+Number of nets:                          8186
+Number of cells:                         7964
+Number of combinational cells:           7396
+Number of sequential cells:               541
+Number of macros/black boxes:               0
+Number of buf/inv:                       1821
+Number of references:                     124
+
+Combinational area:             122277.302693
+Buf/Inv area:                    23548.030385
+Noncombinational area:           24349.202389
+Macro/Black Box area:                0.000000
+Net Interconnect area:         1104372.276520
+
+Total cell area:                146626.505082
+Total area:                    1250998.781601
+1
+ 
+****************************************
+Report : area
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Tue Jan 25 00:32:42 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                          148
+Number of nets:                          8209
+Number of cells:                         8029
+Number of combinational cells:           7480
+Number of sequential cells:               540
+Number of macros/black boxes:               0
+Number of buf/inv:                       1928
+Number of references:                     132
+
+Combinational area:             122957.959707
+Buf/Inv area:                    25510.224657
+Noncombinational area:           24445.954166
+Macro/Black Box area:                0.000000
+Net Interconnect area:         1104045.624420
+
+Total cell area:                147403.913873
+Total area:                    1251449.538293
+1
+ 
+****************************************
+Report : area
+Design : LCD_CTRL
+Version: S-2021.06-SP2
+Date   : Tue Jan 25 00:56:27 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           38
+Number of nets:                           161
+Number of cells:                          144
+Number of combinational cells:            121
+Number of sequential cells:                15
+Number of macros/black boxes:               0
+Number of buf/inv:                         55
+Number of references:                      29
+
+Combinational area:               1634.596240
+Buf/Inv area:                      548.260212
+Noncombinational area:             499.035587
+Macro/Black Box area:                0.000000
+Net Interconnect area:           12180.060883
+
+Total cell area:                  2133.631828
+Total area:                      14313.692710
+1
