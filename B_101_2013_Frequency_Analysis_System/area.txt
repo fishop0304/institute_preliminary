@@ -1,0 +1,190 @@
+Error: Current design is not defined. (UID-4)
+0
+Error: Current design is not defined. (UID-4)
+0
+Error: Current design is not defined. (UID-4)
+0
+ 
+****************************************
+Report : area
+Design : FAS
+Version: R-2020.09
+Date   : Tue Nov  9 21:41:49 2021
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:                        19770
+Number of nets:                        111978
+Number of cells:                        83570
+Number of combinational cells:          81209
+Number of sequential cells:              2078
+Number of macros/black boxes:               0
+Number of buf/inv:                      20442
+Number of references:                       4
+
+Combinational area:            2033120.270078
+Buf/Inv area:                   295585.239287
+Noncombinational area:           95881.033207
+Macro/Black Box area:                0.000000
+Net Interconnect area:         9714135.440338
+
+Total cell area:               2129001.303285
+Total area:                   11843136.743623
+1
+ 
+****************************************
+Report : area
+Design : FAS
+Version: R-2020.09
+Date   : Tue Nov  9 21:58:27 2021
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:                        19596
+Number of nets:                        110523
+Number of cells:                        82192
+Number of combinational cells:          79808
+Number of sequential cells:              2075
+Number of macros/black boxes:               0
+Number of buf/inv:                      18442
+Number of references:                     194
+
+Combinational area:            1904820.597348
+Buf/Inv area:                   256020.543590
+Noncombinational area:           99321.664188
+Macro/Black Box area:                0.000000
+Net Interconnect area:         9779469.060303
+
+Total cell area:               2004142.261536
+Total area:                   11783611.321839
+1
+ 
+****************************************
+Report : area
+Design : FAS
+Version: R-2020.09
+Date   : Tue Nov  9 22:12:48 2021
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:                        19770
+Number of nets:                        111213
+Number of cells:                        82817
+Number of combinational cells:          80456
+Number of sequential cells:              2078
+Number of macros/black boxes:               0
+Number of buf/inv:                      19606
+Number of references:                       4
+
+Combinational area:            1973560.201644
+Buf/Inv area:                   279955.580582
+Noncombinational area:           91542.479336
+Macro/Black Box area:                0.000000
+Net Interconnect area:         9682075.272339
+
+Total cell area:               2065102.680980
+Total area:                   11747177.953319
+1
+ 
+****************************************
+Report : area
+Design : FAS
+Version: R-2020.09
+Date   : Tue Nov  9 22:25:38 2021
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/designkit/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:                        18424
+Number of nets:                        107388
+Number of cells:                        80827
+Number of combinational cells:          78472
+Number of sequential cells:              2075
+Number of macros/black boxes:               0
+Number of buf/inv:                      17873
+Number of references:                     179
+
+Combinational area:            1869957.697798
+Buf/Inv area:                   254234.878727
+Noncombinational area:           99321.664188
+Macro/Black Box area:                0.000000
+Net Interconnect area:         9638115.018280
+
+Total cell area:               1969279.361986
+Total area:                   11607394.380266
+1
+ 
+****************************************
+Report : area
+Design : FAS
+Version: S-2021.06-SP2
+Date   : Thu Jan  6 16:36:18 2022
+****************************************
+
+Library(s) Used:
+
+    gtech (File: /usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db)
+
+Number of ports:                        32386
+Number of nets:                        192407
+Number of cells:                       110604
+Number of combinational cells:         107868
+Number of sequential cells:              2248
+Number of macros/black boxes:               0
+Number of buf/inv:                      12014
+Number of references:                      41
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                     0.000000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+1
+ 
+****************************************
+Report : area
+Design : FAS
+Version: S-2021.06-SP2
+Date   : Fri Jan 21 12:49:04 2022
+****************************************
+
+Library(s) Used:
+
+    gtech (File: /usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db)
+
+Number of ports:                        32386
+Number of nets:                        192407
+Number of cells:                       110604
+Number of combinational cells:         107868
+Number of sequential cells:              2248
+Number of macros/black boxes:               0
+Number of buf/inv:                      12014
+Number of references:                      41
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                     0.000000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+1

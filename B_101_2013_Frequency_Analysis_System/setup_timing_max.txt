@@ -1,0 +1,905 @@
+Error: Current design is not defined. (UID-4)
+0
+Error: Current design is not defined. (UID-4)
+0
+Error: Current design is not defined. (UID-4)
+0
+Information: Updating design information... (UID-85)
+Warning: Design 'FAS' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FAS
+Version: R-2020.09
+Date   : Tue Nov  9 21:41:49 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: a1/count_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: a1/fft_Real_reg[11][23]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FAS                tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  a1/count_reg[1]/CK (DFFTRX4)                            0.00 #     1.00 r
+  a1/count_reg[1]/QN (DFFTRX4)                            0.35       1.35 r
+  a1/U6126/Y (NAND2BX4)                                   0.17       1.52 r
+  a1/U1932/Y (INVX8)                                      0.09       1.60 f
+  a1/U2311/Y (NOR2X8)                                     0.12       1.72 r
+  a1/U66/Y (NAND2X8)                                      0.09       1.82 f
+  a1/U56/Y (INVX16)                                       0.08       1.90 r
+  a1/U63/Y (NAND2X6)                                      0.09       1.99 f
+  a1/U2258/Y (INVX20)                                     0.09       2.08 r
+  a1/U32/Y (INVX16)                                       0.05       2.13 f
+  a1/U5986/Y (CLKAND2X12)                                 0.15       2.28 f
+  a1/a03/FFT_I1[0] (FFT_5)                                0.00       2.28 f
+  a1/a03/sub_304_2/A[0] (FFT_5_DW01_sub_1_DW01_sub_20)
+                                                          0.00       2.28 f
+  a1/a03/sub_304_2/U2/Y (CLKINVX8)                        0.06       2.34 r
+  a1/a03/sub_304_2/U4/Y (NAND2X4)                         0.06       2.40 f
+  a1/a03/sub_304_2/U2_1/CO (ADDFHX4)                      0.21       2.61 f
+  a1/a03/sub_304_2/U2_2/CO (ADDFHX4)                      0.20       2.81 f
+  a1/a03/sub_304_2/U2_3/CO (ADDFHX4)                      0.20       3.02 f
+  a1/a03/sub_304_2/U2_4/CO (ADDFHX4)                      0.20       3.22 f
+  a1/a03/sub_304_2/U2_5/CO (ADDFHX4)                      0.20       3.42 f
+  a1/a03/sub_304_2/U2_6/CO (ADDFHX4)                      0.20       3.63 f
+  a1/a03/sub_304_2/U2_7/CO (ADDFHX4)                      0.20       3.83 f
+  a1/a03/sub_304_2/U2_8/CO (ADDFHX4)                      0.20       4.03 f
+  a1/a03/sub_304_2/U2_9/CO (ADDFHX4)                      0.20       4.24 f
+  a1/a03/sub_304_2/U2_10/CO (ADDFHX4)                     0.20       4.44 f
+  a1/a03/sub_304_2/U2_11/S (ADDFHX4)                      0.28       4.72 r
+  a1/a03/sub_304_2/U1/Y (BUFX20)                          0.13       4.85 r
+  a1/a03/sub_304_2/DIFF[11] (FFT_5_DW01_sub_1_DW01_sub_20)
+                                                          0.00       4.85 r
+  a1/a03/mult_304_2/a[11] (FFT_5_DW_mult_tc_4)            0.00       4.85 r
+  a1/a03/mult_304_2/U2174/Y (XOR2X4)                      0.16       5.01 r
+  a1/a03/mult_304_2/U1743/Y (NAND2BX4)                    0.12       5.13 f
+  a1/a03/mult_304_2/U2267/Y (INVX12)                      0.08       5.21 r
+  a1/a03/mult_304_2/U2322/Y (OAI2BB1X4)                   0.15       5.37 r
+  a1/a03/mult_304_2/U2561/Y (XOR2X4)                      0.14       5.50 f
+  a1/a03/mult_304_2/U2577/ICO (CMPR42X4)                  0.25       5.75 f
+  a1/a03/mult_304_2/U2569/ICO (CMPR42X4)                  0.23       5.98 f
+  a1/a03/mult_304_2/U797/CO (CMPR42X2)                    0.73       6.72 f
+  a1/a03/mult_304_2/U2225/S (ADDHX4)                      0.14       6.86 f
+  a1/a03/mult_304_2/U794/CO (CMPR42X2)                    0.72       7.58 f
+  a1/a03/mult_304_2/U2314/Y (XOR2X4)                      0.12       7.70 r
+  a1/a03/mult_304_2/U791/CO (CMPR42X2)                    0.74       8.45 f
+  a1/a03/mult_304_2/U2570/S (ADDHX2)                      0.14       8.59 f
+  a1/a03/mult_304_2/U788/CO (CMPR42X2)                    0.73       9.31 f
+  a1/a03/mult_304_2/U2333/S (CMPR22X2)                    0.14       9.46 f
+  a1/a03/mult_304_2/U785/CO (CMPR42X2)                    0.72      10.18 f
+  a1/a03/mult_304_2/U2573/S (ADDHX2)                      0.14      10.33 f
+  a1/a03/mult_304_2/U782/CO (CMPR42X2)                    0.73      11.05 f
+  a1/a03/mult_304_2/U2574/S (ADDHX2)                      0.14      11.20 f
+  a1/a03/mult_304_2/U779/CO (CMPR42X2)                    0.74      11.94 f
+  a1/a03/mult_304_2/U2249/S (ADDHX4)                      0.14      12.08 f
+  a1/a03/mult_304_2/U776/CO (CMPR42X2)                    0.72      12.80 f
+  a1/a03/mult_304_2/U2295/Y (XOR2X4)                      0.15      12.95 r
+  a1/a03/mult_304_2/U771/CO (CMPR42X2)                    0.75      13.70 f
+  a1/a03/mult_304_2/U2311/Y (XOR2X4)                      0.12      13.82 r
+  a1/a03/mult_304_2/U768/CO (CMPR42X2)                    0.74      14.56 f
+  a1/a03/mult_304_2/U765/S (CMPR42X2)                     0.68      15.24 f
+  a1/a03/mult_304_2/U763/CO (CMPR42X2)                    0.72      15.96 f
+  a1/a03/mult_304_2/U2186/S (CMPR22X2)                    0.14      16.11 f
+  a1/a03/mult_304_2/U760/CO (CMPR42X2)                    0.73      16.84 f
+  a1/a03/mult_304_2/U757/S (CMPR42X2)                     0.71      17.55 f
+  a1/a03/mult_304_2/U755/CO (CMPR42X2)                    0.72      18.27 f
+  a1/a03/mult_304_2/U2575/S (CMPR22X2)                    0.14      18.41 f
+  a1/a03/mult_304_2/U752/S (CMPR42X2)                     0.79      19.20 f
+  a1/a03/mult_304_2/U750/CO (CMPR42X2)                    0.75      19.95 f
+  a1/a03/mult_304_2/U2308/Y (XOR2X4)                      0.14      20.09 r
+  a1/a03/mult_304_2/U747/S (CMPR42X2)                     0.81      20.89 f
+  a1/a03/mult_304_2/U745/CO (CMPR42X2)                    0.72      21.61 f
+  a1/a03/mult_304_2/U2185/S (CMPR22X2)                    0.14      21.76 f
+  a1/a03/mult_304_2/U742/S (CMPR42X2)                     0.79      22.54 f
+  a1/a03/mult_304_2/U740/CO (CMPR42X2)                    0.72      23.27 f
+  a1/a03/mult_304_2/U2564/S (CMPR22X2)                    0.13      23.39 r
+  a1/a03/mult_304_2/U737/S (CMPR42X2)                     0.82      24.21 f
+  a1/a03/mult_304_2/U735/CO (CMPR42X2)                    0.72      24.93 f
+  a1/a03/mult_304_2/U2205/S (CMPR22X2)                    0.14      25.08 f
+  a1/a03/mult_304_2/U732/S (CMPR42X2)                     0.79      25.86 f
+  a1/a03/mult_304_2/U730/CO (CMPR42X2)                    0.75      26.61 f
+  a1/a03/mult_304_2/U2305/Y (XOR2X4)                      0.14      26.75 r
+  a1/a03/mult_304_2/U727/S (CMPR42X2)                     0.81      27.56 f
+  a1/a03/mult_304_2/U725/CO (CMPR42X2)                    0.74      28.30 f
+  a1/a03/mult_304_2/U2246/S (ADDHX4)                      0.14      28.44 f
+  a1/a03/mult_304_2/U722/S (CMPR42X2)                     0.80      29.24 f
+  a1/a03/mult_304_2/U720/CO (CMPR42X2)                    0.72      29.96 f
+  a1/a03/mult_304_2/U2555/Y (XOR2X4)                      0.12      30.08 r
+  a1/a03/mult_304_2/U715/S (CMPR42X2)                     0.81      30.89 f
+  a1/a03/mult_304_2/U713/CO (CMPR42X2)                    0.72      31.61 f
+  a1/a03/mult_304_2/U2187/S (CMPR22X2)                    0.14      31.75 f
+  a1/a03/mult_304_2/U710/S (CMPR42X2)                     0.79      32.54 f
+  a1/a03/mult_304_2/U708/CO (CMPR42X2)                    0.71      33.25 f
+  a1/a03/mult_304_2/U704/S (CMPR42X2)                     0.61      33.86 f
+  a1/a03/mult_304_2/U702/S (CMPR42X2)                     0.78      34.65 f
+  a1/a03/mult_304_2/U700/CO (CMPR42X2)                    0.73      35.38 f
+  a1/a03/mult_304_2/U698/S (CMPR42X2)                     0.71      36.08 f
+  a1/a03/mult_304_2/U696/S (CMPR42X2)                     0.78      36.87 f
+  a1/a03/mult_304_2/U694/CO (CMPR42X2)                    0.73      37.60 f
+  a1/a03/mult_304_2/U692/S (CMPR42X2)                     0.71      38.31 f
+  a1/a03/mult_304_2/U690/S (CMPR42X2)                     0.78      39.09 f
+  a1/a03/mult_304_2/U688/CO (CMPR42X2)                    0.73      39.82 f
+  a1/a03/mult_304_2/U686/S (CMPR42X2)                     0.71      40.53 f
+  a1/a03/mult_304_2/U684/S (CMPR42X2)                     0.78      41.31 f
+  a1/a03/mult_304_2/U682/CO (CMPR42X2)                    0.72      42.04 f
+  a1/a03/mult_304_2/U2578/Y (XOR2X4)                      0.12      42.16 r
+  a1/a03/mult_304_2/U2567/Y (XOR2X4)                      0.15      42.31 r
+  a1/a03/mult_304_2/U2572/Y (XOR2X4)                      0.15      42.46 r
+  a1/a03/mult_304_2/U2571/Y (XOR2X4)                      0.15      42.62 r
+  a1/a03/mult_304_2/U2230/Y (XOR2X4)                      0.15      42.77 r
+  a1/a03/mult_304_2/U2228/Y (XOR2X4)                      0.15      42.92 r
+  a1/a03/mult_304_2/U2292/Y (XOR2X4)                      0.15      43.08 r
+  a1/a03/mult_304_2/U2566/Y (XOR2X4)                      0.15      43.23 r
+  a1/a03/mult_304_2/U2576/Y (XOR2X4)                      0.19      43.42 f
+  a1/a03/mult_304_2/U2565/Y (OR2X8)                       0.17      43.59 f
+  a1/a03/mult_304_2/U2484/Y (NAND2X6)                     0.06      43.65 r
+  a1/a03/mult_304_2/U2552/Y (XOR2X4)                      0.14      43.79 f
+  a1/a03/mult_304_2/product[37] (FFT_5_DW_mult_tc_4)      0.00      43.79 f
+  a1/a03/add_304/B[37] (FFT_5_DW01_add_5)                 0.00      43.79 f
+  a1/a03/add_304/U342/Y (OR2X8)                           0.18      43.97 f
+  a1/a03/add_304/U343/Y (NAND2X8)                         0.08      44.05 r
+  a1/a03/add_304/U337/Y (NAND2X4)                         0.09      44.14 f
+  a1/a03/add_304/U339/Y (NAND2X8)                         0.12      44.26 r
+  a1/a03/add_304/SUM[37] (FFT_5_DW01_add_5)               0.00      44.26 r
+  a1/a03/FFT_out_R1[22] (FFT_5)                           0.00      44.26 r
+  a1/U2364/Y (INVX20)                                     0.10      44.37 f
+  a1/U2909/Y (INVX20)                                     0.08      44.45 r
+  a1/U1762/Y (INVX20)                                     0.05      44.50 f
+  a1/U6291/Y (OAI222X2)                                   0.18      44.68 r
+  a1/fft_Real_reg[11][23]/D (EDFFHQX4)                    0.00      44.68 r
+  data arrival time                                                 44.68
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             1.00      21.00
+  clock uncertainty                                      -1.00      20.00
+  a1/fft_Real_reg[11][23]/CK (EDFFHQX4)                   0.00      20.00 r
+  library setup time                                     -0.24      19.76
+  data required time                                                19.76
+  --------------------------------------------------------------------------
+  data required time                                                19.76
+  data arrival time                                                -44.68
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -24.92
+
+
+1
+Information: Updating design information... (UID-85)
+Warning: Design 'FAS' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FAS
+Version: R-2020.09
+Date   : Tue Nov  9 21:58:27 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: count_1_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: fft_data1_real_reg[9][22]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FAS                tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  count_1_reg[2]/CK (DFFRX4)                              0.00 #     1.00 r
+  count_1_reg[2]/QN (DFFRX4)                              0.23       1.23 f
+  C7671/Y (AND2X8)                                        0.15       1.38 f
+  U8023/Y (NAND2X8)                                       0.09       1.47 r
+  U8018/Y (CLKINVX12)                                     0.09       1.56 f
+  U7509/Y (AND2X8)                                        0.16       1.72 f
+  U7796/Y (BUFX20)                                        0.14       1.86 f
+  U7644/Y (BUFX20)                                        0.13       1.99 f
+  U8230/Y (BUFX20)                                        0.14       2.14 f
+  U8229/Y (OAI22X4)                                       0.30       2.44 r
+  a01/FFT_I1[0] (FFT_7)                                   0.00       2.44 r
+  a01/sub_379_2/B[0] (FFT_7_DW01_sub_1_DW01_sub_12)       0.00       2.44 r
+  a01/sub_379_2/U21/Y (INVX8)                             0.11       2.55 f
+  a01/sub_379_2/U20/Y (CLKINVX8)                          0.07       2.62 r
+  a01/sub_379_2/U24/Y (NAND2X6)                           0.05       2.67 f
+  a01/sub_379_2/U2_1/CO (ADDFHX4)                         0.19       2.86 f
+  a01/sub_379_2/U2_2/CO (ADDFHX2)                         0.24       3.10 f
+  a01/sub_379_2/U2_3/CO (ADDFHX4)                         0.21       3.31 f
+  a01/sub_379_2/U2_4/CO (ADDFHX4)                         0.20       3.51 f
+  a01/sub_379_2/U2_5/CO (ADDFHX4)                         0.20       3.71 f
+  a01/sub_379_2/U2_6/CO (ADDFHX2)                         0.24       3.95 f
+  a01/sub_379_2/U2_7/CO (ADDFHX4)                         0.20       4.15 f
+  a01/sub_379_2/U2_8/CO (ADDFHX1)                         0.32       4.47 f
+  a01/sub_379_2/U2_9/CO (ADDFHX4)                         0.23       4.70 f
+  a01/sub_379_2/U2_10/CO (ADDFHX2)                        0.22       4.92 f
+  a01/sub_379_2/U2_11/CO (ADDFX2)                         0.35       5.27 f
+  a01/sub_379_2/U2_12/CO (ADDFX2)                         0.36       5.64 f
+  a01/sub_379_2/U2_13/CO (ADDFXL)                         0.49       6.13 f
+  a01/sub_379_2/U2_14/S (ADDFXL)                          0.66       6.79 r
+  a01/sub_379_2/U11/Y (INVX4)                             0.21       7.00 f
+  a01/sub_379_2/U12/Y (CLKINVX16)                         0.20       7.20 r
+  a01/sub_379_2/DIFF[14] (FFT_7_DW01_sub_1_DW01_sub_12)
+                                                          0.00       7.20 r
+  a01/mult_379_2/a[14] (FFT_7_DW_mult_tc_4)               0.00       7.20 r
+  a01/mult_379_2/U1666/Y (CLKXOR2X8)                      0.29       7.49 r
+  a01/mult_379_2/U1661/Y (NAND2BX4)                       0.50       7.99 f
+  a01/mult_379_2/U2195/Y (OAI21XL)                        0.79       8.78 r
+  a01/mult_379_2/U1129/Y (CLKXOR2X8)                      0.38       9.16 f
+  a01/mult_379_2/U720/CO (ADDFHX4)                        0.21       9.37 f
+  a01/mult_379_2/U2306/S (CMPR22X2)                       0.16       9.53 r
+  a01/mult_379_2/U716/CO (CMPR42X2)                       0.75      10.28 f
+  a01/mult_379_2/U2353/S (ADDHX2)                         0.17      10.45 r
+  a01/mult_379_2/U713/CO (CMPR42X2)                       0.74      11.19 f
+  a01/mult_379_2/U2363/S (ADDHX2)                         0.14      11.33 f
+  a01/mult_379_2/U710/CO (CMPR42X2)                       0.74      12.07 f
+  a01/mult_379_2/U2354/S (ADDHX2)                         0.14      12.22 f
+  a01/mult_379_2/U707/CO (CMPR42X2)                       0.74      12.96 f
+  a01/mult_379_2/U2352/S (ADDHX2)                         0.17      13.13 r
+  a01/mult_379_2/U704/CO (CMPR42X2)                       0.74      13.86 f
+  a01/mult_379_2/U2361/S (ADDHX2)                         0.14      14.01 f
+  a01/mult_379_2/U701/CO (CMPR42X2)                       0.80      14.81 f
+  a01/mult_379_2/U2296/Y (XOR2X4)                         0.15      14.95 r
+  a01/mult_379_2/U696/CO (CMPR42X2)                       0.76      15.71 f
+  a01/mult_379_2/U2350/S (ADDHX2)                         0.17      15.88 r
+  a01/mult_379_2/U693/CO (CMPR42X2)                       0.74      16.62 f
+  a01/mult_379_2/U690/S (CMPR42X2)                        0.68      17.30 f
+  a01/mult_379_2/U688/CO (CMPR42X2)                       0.72      18.02 f
+  a01/mult_379_2/U2305/S (CMPR22X2)                       0.14      18.16 f
+  a01/mult_379_2/U685/CO (CMPR42X2)                       0.73      18.89 f
+  a01/mult_379_2/U682/S (CMPR42X2)                        0.71      19.60 f
+  a01/mult_379_2/U680/CO (CMPR42X2)                       0.72      20.32 f
+  a01/mult_379_2/U2346/S (CMPR22X2)                       0.13      20.45 r
+  a01/mult_379_2/U677/S (CMPR42X2)                        0.81      21.27 f
+  a01/mult_379_2/U675/CO (CMPR42X2)                       0.72      21.99 f
+  a01/mult_379_2/U2348/S (ADDHX2)                         0.14      22.13 f
+  a01/mult_379_2/U672/S (CMPR42X2)                        0.79      22.92 f
+  a01/mult_379_2/U670/CO (CMPR42X2)                       0.65      23.57 f
+  a01/mult_379_2/U2262/S (CMPR22X2)                       0.14      23.71 f
+  a01/mult_379_2/U667/S (CMPR42X2)                        0.79      24.50 f
+  a01/mult_379_2/U665/CO (CMPR42X2)                       0.72      25.22 f
+  a01/mult_379_2/U2362/S (CMPR22X2)                       0.13      25.35 r
+  a01/mult_379_2/U662/CO (CMPR42X2)                       0.76      26.11 f
+  a01/mult_379_2/U657/S (CMPR42X2)                        0.78      26.90 f
+  a01/mult_379_2/U655/CO (CMPR42X2)                       0.72      27.62 f
+  a01/mult_379_2/U2351/S (ADDHX2)                         0.14      27.76 f
+  a01/mult_379_2/U652/S (CMPR42X2)                        0.79      28.55 f
+  a01/mult_379_2/U650/CO (CMPR42X2)                       0.72      29.27 f
+  a01/mult_379_2/U2301/S (ADDHX2)                         0.14      29.42 f
+  a01/mult_379_2/U647/S (CMPR42X2)                        0.80      30.21 f
+  a01/mult_379_2/U645/CO (CMPR42X2)                       0.78      30.99 f
+  a01/mult_379_2/U2240/Y (XOR2X4)                         0.15      31.14 r
+  a01/mult_379_2/U640/S (CMPR42X2)                        0.81      31.95 f
+  a01/mult_379_2/U638/CO (CMPR42X2)                       0.74      32.68 f
+  a01/mult_379_2/U2359/S (ADDHX2)                         0.17      32.85 r
+  a01/mult_379_2/U635/S (CMPR42X2)                        0.80      33.65 f
+  a01/mult_379_2/U633/CO (CMPR42X2)                       0.71      34.37 f
+  a01/mult_379_2/U629/S (CMPR42X2)                        0.61      34.97 f
+  a01/mult_379_2/U627/S (CMPR42X2)                        0.77      35.74 f
+  a01/mult_379_2/U625/CO (CMPR42X2)                       0.24      35.98 f
+  a01/mult_379_2/U623/S (CMPR42X2)                        0.71      36.69 f
+  a01/mult_379_2/U621/S (CMPR42X2)                        0.78      37.47 f
+  a01/mult_379_2/U619/CO (CMPR42X2)                       0.73      38.20 f
+  a01/mult_379_2/U617/S (CMPR42X2)                        0.71      38.91 f
+  a01/mult_379_2/U615/S (CMPR42X2)                        0.78      39.70 f
+  a01/mult_379_2/U613/CO (CMPR42X2)                       0.73      40.43 f
+  a01/mult_379_2/U611/S (CMPR42X2)                        0.71      41.14 f
+  a01/mult_379_2/U608/CO (CMPR42X2)                       0.73      41.86 f
+  a01/mult_379_2/U2341/Y (XOR2X4)                         0.17      42.03 r
+  a01/mult_379_2/U2342/Y (XOR2X4)                         0.20      42.23 r
+  a01/mult_379_2/U2344/Y (XOR2X4)                         0.20      42.43 r
+  a01/mult_379_2/U2355/Y (XOR2X4)                         0.16      42.59 r
+  a01/mult_379_2/U2356/Y (XOR2X4)                         0.15      42.74 r
+  a01/mult_379_2/U2358/Y (XOR2X4)                         0.15      42.89 r
+  a01/mult_379_2/U2357/Y (XOR2X4)                         0.19      43.09 f
+  a01/mult_379_2/U2293/Y (NOR2X6)                         0.12      43.20 r
+  a01/mult_379_2/U2302/Y (INVX6)                          0.06      43.27 f
+  a01/mult_379_2/U2345/Y (NAND2X6)                        0.06      43.32 r
+  a01/mult_379_2/U2260/Y (XOR2X4)                         0.14      43.47 f
+  a01/mult_379_2/product[37] (FFT_7_DW_mult_tc_4)         0.00      43.47 f
+  a01/add_379/B[37] (FFT_7_DW01_add_6)                    0.00      43.47 f
+  a01/add_379/U332/Y (OR2X8)                              0.18      43.64 f
+  a01/add_379/U333/Y (NAND2X8)                            0.06      43.70 r
+  a01/add_379/U336/Y (XOR2X4)                             0.17      43.87 f
+  a01/add_379/SUM[37] (FFT_7_DW01_add_6)                  0.00      43.87 f
+  a01/U59/Y (BUFX20)                                      0.15      44.02 f
+  a01/FFT_out_R2[22] (FFT_7)                              0.00      44.02 f
+  U7505/Y (CLKINVX6)                                      0.08      44.09 r
+  U3573/Y (OAI222XL)                                      0.23      44.33 f
+  fft_data1_real_reg[9][22]/D (EDFFX1)                    0.00      44.33 f
+  data arrival time                                                 44.33
+
+  clock clk (rise edge)                                  45.00      45.00
+  clock network delay (ideal)                             1.00      46.00
+  clock uncertainty                                      -1.00      45.00
+  fft_data1_real_reg[9][22]/CK (EDFFX1)                   0.00      45.00 r
+  library setup time                                     -0.67      44.33
+  data required time                                                44.33
+  --------------------------------------------------------------------------
+  data required time                                                44.33
+  data arrival time                                                -44.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
+Information: Updating design information... (UID-85)
+Warning: Design 'FAS' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FAS
+Version: R-2020.09
+Date   : Tue Nov  9 22:12:47 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: a1/count_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: a1/fft_Real_reg[11][28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FAS                tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  a1/count_reg[1]/CK (DFFTRX4)                            0.00 #     1.00 r
+  a1/count_reg[1]/Q (DFFTRX4)                             0.37       1.37 r
+  a1/U217/Y (CLKINVX1)                                    0.15       1.52 f
+  a1/U4473/Y (CLKAND2X8)                                  0.21       1.73 f
+  a1/U4769/Y (NOR2X6)                                     0.11       1.84 r
+  a1/U4998/Y (CLKBUFX12)                                  0.14       1.97 r
+  a1/U5784/Y (BUFX20)                                     0.10       2.07 r
+  a1/U5779/Y (CLKBUFX20)                                  0.12       2.19 r
+  a1/U5778/Y (BUFX20)                                     0.09       2.27 r
+  a1/U4735/Y (BUFX20)                                     0.13       2.41 r
+  a1/U5200/Y (NOR2BX4)                                    0.10       2.50 f
+  a1/U4398/Y (INVX12)                                     0.18       2.68 r
+  a1/U4401/Y (CLKINVX12)                                  0.23       2.91 f
+  a1/a05/wi[3] (FFT_3)                                    0.00       2.91 f
+  a1/a05/U7/Y (BUFX20)                                    0.17       3.08 f
+  a1/a05/mult_304_2/b[3] (FFT_3_DW_mult_tc_4)             0.00       3.08 f
+  a1/a05/mult_304_2/U2130/Y (BUFX20)                      0.18       3.26 f
+  a1/a05/mult_304_2/U2110/Y (NAND2X8)                     0.12       3.38 r
+  a1/a05/mult_304_2/U2968/Y (CLKINVX6)                    0.10       3.48 f
+  a1/a05/mult_304_2/U2104/Y (AOI21X4)                     0.14       3.61 r
+  a1/a05/mult_304_2/U2096/Y (OAI21X4)                     0.12       3.74 f
+  a1/a05/mult_304_2/U2084/Y (AOI21X4)                     0.23       3.97 r
+  a1/a05/mult_304_2/U2357/Y (OA21X4)                      0.20       4.17 r
+  a1/a05/mult_304_2/U2072/Y (OAI21X4)                     0.08       4.25 f
+  a1/a05/mult_304_2/U2370/Y (XOR2X4)                      0.14       4.40 r
+  a1/a05/mult_304_2/U2389/Y (INVX12)                      0.14       4.54 f
+  a1/a05/mult_304_2/U1578/Y (OAI21X4)                     0.14       4.68 r
+  a1/a05/mult_304_2/U2457/Y (XOR2X4)                      0.17       4.85 f
+  a1/a05/mult_304_2/U805/CO (ADDFHX4)                     0.27       5.13 f
+  a1/a05/mult_304_2/U803/CO (ADDFHX4)                     0.22       5.34 f
+  a1/a05/mult_304_2/U2763/ICO (CMPR42X4)                  0.24       5.59 f
+  a1/a05/mult_304_2/U2766/ICO (CMPR42X4)                  0.23       5.82 f
+  a1/a05/mult_304_2/U797/CO (CMPR42X2)                    0.73       6.55 f
+  a1/a05/mult_304_2/U2440/S (ADDHX4)                      0.14       6.69 f
+  a1/a05/mult_304_2/U794/CO (CMPR42X2)                    0.73       7.42 f
+  a1/a05/mult_304_2/U2634/Y (XOR2X4)                      0.12       7.54 r
+  a1/a05/mult_304_2/U791/CO (CMPR42X2)                    0.74       8.29 f
+  a1/a05/mult_304_2/U2547/S (CMPR22X2)                    0.14       8.43 f
+  a1/a05/mult_304_2/U788/CO (CMPR42X2)                    0.72       9.15 f
+  a1/a05/mult_304_2/U2131/S (CMPR22X2)                    0.14       9.30 f
+  a1/a05/mult_304_2/U785/CO (CMPR42X2)                    0.72      10.02 f
+  a1/a05/mult_304_2/U2668/S (CMPR22X2)                    0.14      10.17 f
+  a1/a05/mult_304_2/U782/CO (CMPR42X2)                    0.72      10.89 f
+  a1/a05/mult_304_2/U2627/S (CMPR22X2)                    0.14      11.03 f
+  a1/a05/mult_304_2/U779/CO (CMPR42X2)                    0.74      11.78 f
+  a1/a05/mult_304_2/U2470/S (ADDHX4)                      0.14      11.92 f
+  a1/a05/mult_304_2/U776/CO (CMPR42X2)                    0.74      12.66 f
+  a1/a05/mult_304_2/U2682/Y (XOR2X4)                      0.12      12.78 r
+  a1/a05/mult_304_2/U771/CO (CMPR42X2)                    0.74      13.52 f
+  a1/a05/mult_304_2/U2603/S (CMPR22X2)                    0.14      13.67 f
+  a1/a05/mult_304_2/U768/CO (CMPR42X2)                    0.72      14.39 f
+  a1/a05/mult_304_2/U765/S (CMPR42X2)                     0.68      15.07 f
+  a1/a05/mult_304_2/U763/CO (CMPR42X2)                    0.75      15.82 f
+  a1/a05/mult_304_2/U2631/Y (XOR2X4)                      0.14      15.96 r
+  a1/a05/mult_304_2/U760/CO (CMPR42X2)                    0.75      16.71 f
+  a1/a05/mult_304_2/U757/S (CMPR42X2)                     0.71      17.42 f
+  a1/a05/mult_304_2/U755/CO (CMPR42X2)                    0.72      18.14 f
+  a1/a05/mult_304_2/U2764/S (CMPR22X2)                    0.13      18.27 r
+  a1/a05/mult_304_2/U752/S (CMPR42X2)                     0.82      19.09 f
+  a1/a05/mult_304_2/U750/CO (CMPR42X2)                    0.75      19.84 f
+  a1/a05/mult_304_2/U2557/Y (XOR2X4)                      0.14      19.97 r
+  a1/a05/mult_304_2/U747/S (CMPR42X2)                     0.81      20.78 f
+  a1/a05/mult_304_2/U745/CO (CMPR42X2)                    0.75      21.53 f
+  a1/a05/mult_304_2/U2560/Y (XOR2X4)                      0.14      21.66 r
+  a1/a05/mult_304_2/U742/S (CMPR42X2)                     0.81      22.47 f
+  a1/a05/mult_304_2/U740/CO (CMPR42X2)                    0.72      23.19 f
+  a1/a05/mult_304_2/U2771/S (CMPR22X2)                    0.13      23.32 r
+  a1/a05/mult_304_2/U737/S (CMPR42X2)                     0.82      24.14 f
+  a1/a05/mult_304_2/U735/CO (CMPR42X2)                    0.75      24.89 f
+  a1/a05/mult_304_2/U2628/Y (XOR2X4)                      0.14      25.02 r
+  a1/a05/mult_304_2/U732/S (CMPR42X2)                     0.81      25.83 f
+  a1/a05/mult_304_2/U730/CO (CMPR42X2)                    0.72      26.55 f
+  a1/a05/mult_304_2/U2625/S (CMPR22X2)                    0.14      26.69 f
+  a1/a05/mult_304_2/U727/S (CMPR42X2)                     0.79      27.48 f
+  a1/a05/mult_304_2/U725/CO (CMPR42X2)                    0.72      28.20 f
+  a1/a05/mult_304_2/U2687/S (ADDHX2)                      0.14      28.35 f
+  a1/a05/mult_304_2/U722/S (CMPR42X2)                     0.80      29.14 f
+  a1/a05/mult_304_2/U720/CO (CMPR42X2)                    0.75      29.89 f
+  a1/a05/mult_304_2/U2748/Y (XOR2X4)                      0.14      30.03 r
+  a1/a05/mult_304_2/U715/S (CMPR42X2)                     0.81      30.84 f
+  a1/a05/mult_304_2/U713/CO (CMPR42X2)                    0.72      31.56 f
+  a1/a05/mult_304_2/U2607/S (CMPR22X2)                    0.14      31.70 f
+  a1/a05/mult_304_2/U710/S (CMPR42X2)                     0.79      32.49 f
+  a1/a05/mult_304_2/U708/CO (CMPR42X2)                    0.71      33.20 f
+  a1/a05/mult_304_2/U704/S (CMPR42X2)                     0.61      33.81 f
+  a1/a05/mult_304_2/U702/S (CMPR42X2)                     0.78      34.59 f
+  a1/a05/mult_304_2/U700/CO (CMPR42X2)                    0.73      35.32 f
+  a1/a05/mult_304_2/U698/S (CMPR42X2)                     0.71      36.03 f
+  a1/a05/mult_304_2/U696/S (CMPR42X2)                     0.78      36.82 f
+  a1/a05/mult_304_2/U694/CO (CMPR42X2)                    0.73      37.55 f
+  a1/a05/mult_304_2/U692/S (CMPR42X2)                     0.71      38.26 f
+  a1/a05/mult_304_2/U690/S (CMPR42X2)                     0.78      39.04 f
+  a1/a05/mult_304_2/U688/CO (CMPR42X2)                    0.73      39.77 f
+  a1/a05/mult_304_2/U686/S (CMPR42X2)                     0.71      40.48 f
+  a1/a05/mult_304_2/U684/S (CMPR42X2)                     0.78      41.26 f
+  a1/a05/mult_304_2/U682/CO (CMPR42X2)                    0.72      41.98 f
+  a1/a05/mult_304_2/U2765/Y (XOR2X4)                      0.12      42.11 r
+  a1/a05/mult_304_2/U2760/Y (XOR2X4)                      0.15      42.26 r
+  a1/a05/mult_304_2/U2762/Y (XOR2X4)                      0.15      42.41 r
+  a1/a05/mult_304_2/U2761/Y (XOR2X4)                      0.15      42.57 r
+  a1/a05/mult_304_2/U2758/Y (XOR2X4)                      0.15      42.72 r
+  a1/a05/mult_304_2/U2767/Y (XOR2X4)                      0.15      42.87 r
+  a1/a05/mult_304_2/U2768/Y (XOR2X4)                      0.15      43.03 r
+  a1/a05/mult_304_2/U2770/Y (XOR2X4)                      0.15      43.18 r
+  a1/a05/mult_304_2/U2769/Y (XOR2X4)                      0.19      43.37 f
+  a1/a05/mult_304_2/U2660/Y (OR2X8)                       0.17      43.54 f
+  a1/a05/mult_304_2/U2759/Y (NAND2X6)                     0.06      43.60 r
+  a1/a05/mult_304_2/U2663/Y (XOR2X4)                      0.14      43.74 f
+  a1/a05/mult_304_2/product[37] (FFT_3_DW_mult_tc_4)      0.00      43.74 f
+  a1/a05/add_304/B[37] (FFT_3_DW01_add_5)                 0.00      43.74 f
+  a1/a05/add_304/U334/Y (OR2X8)                           0.17      43.91 f
+  a1/a05/add_304/U332/Y (NAND2X6)                         0.06      43.97 r
+  a1/a05/add_304/U333/Y (XOR2X4)                          0.13      44.10 f
+  a1/a05/add_304/SUM[37] (FFT_3_DW01_add_5)               0.00      44.10 f
+  a1/a05/U55/Y (BUFX20)                                   0.14      44.24 f
+  a1/a05/U9/Y (BUFX8)                                     0.15      44.39 f
+  a1/a05/FFT_out_R1[28] (FFT_3)                           0.00      44.39 f
+  a1/U4819/Y (CLKINVX16)                                  0.06      44.44 r
+  a1/U5196/Y (OAI222X2)                                   0.19      44.63 f
+  a1/fft_Real_reg[11][28]/D (EDFFXL)                      0.00      44.63 f
+  data arrival time                                                 44.63
+
+  clock clk (rise edge)                                  45.00      45.00
+  clock network delay (ideal)                             1.00      46.00
+  clock uncertainty                                      -1.00      45.00
+  a1/fft_Real_reg[11][28]/CK (EDFFXL)                     0.00      45.00 r
+  library setup time                                     -0.37      44.63
+  data required time                                                44.63
+  --------------------------------------------------------------------------
+  data required time                                                44.63
+  data arrival time                                                -44.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
+Information: Updating design information... (UID-85)
+Warning: Design 'FAS' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FAS
+Version: R-2020.09
+Date   : Tue Nov  9 22:25:38 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: count_1_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: fft_data1_real_reg[9][22]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FAS                tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  count_1_reg[2]/CK (DFFRX4)                              0.00 #     1.00 r
+  count_1_reg[2]/QN (DFFRX4)                              0.23       1.23 f
+  C7671/Y (AND2X8)                                        0.15       1.38 f
+  U7664/Y (NAND2X8)                                       0.09       1.47 r
+  U7659/Y (CLKINVX12)                                     0.09       1.56 f
+  U7150/Y (AND2X8)                                        0.16       1.72 f
+  U7437/Y (BUFX20)                                        0.14       1.86 f
+  U7285/Y (BUFX20)                                        0.13       1.99 f
+  U7871/Y (BUFX20)                                        0.14       2.14 f
+  U7870/Y (OAI22X4)                                       0.30       2.44 r
+  a01/FFT_I1[0] (FFT_7)                                   0.00       2.44 r
+  a01/sub_377_2/B[0] (FFT_7_DW01_sub_1_DW01_sub_12)       0.00       2.44 r
+  a01/sub_377_2/U21/Y (INVX8)                             0.11       2.55 f
+  a01/sub_377_2/U20/Y (CLKINVX8)                          0.07       2.62 r
+  a01/sub_377_2/U24/Y (NAND2X6)                           0.05       2.67 f
+  a01/sub_377_2/U2_1/CO (ADDFHX4)                         0.19       2.86 f
+  a01/sub_377_2/U2_2/CO (ADDFHX2)                         0.24       3.10 f
+  a01/sub_377_2/U2_3/CO (ADDFHX4)                         0.21       3.31 f
+  a01/sub_377_2/U2_4/CO (ADDFHX4)                         0.20       3.51 f
+  a01/sub_377_2/U2_5/CO (ADDFHX4)                         0.20       3.71 f
+  a01/sub_377_2/U2_6/CO (ADDFHX2)                         0.24       3.95 f
+  a01/sub_377_2/U2_7/CO (ADDFHX4)                         0.20       4.15 f
+  a01/sub_377_2/U2_8/CO (ADDFHX1)                         0.32       4.47 f
+  a01/sub_377_2/U2_9/CO (ADDFHX4)                         0.23       4.70 f
+  a01/sub_377_2/U2_10/CO (ADDFHX2)                        0.22       4.92 f
+  a01/sub_377_2/U2_11/CO (ADDFX2)                         0.35       5.27 f
+  a01/sub_377_2/U2_12/CO (ADDFX2)                         0.36       5.64 f
+  a01/sub_377_2/U2_13/CO (ADDFXL)                         0.49       6.13 f
+  a01/sub_377_2/U2_14/S (ADDFXL)                          0.66       6.79 r
+  a01/sub_377_2/U11/Y (INVX4)                             0.21       7.00 f
+  a01/sub_377_2/U12/Y (CLKINVX16)                         0.20       7.20 r
+  a01/sub_377_2/DIFF[14] (FFT_7_DW01_sub_1_DW01_sub_12)
+                                                          0.00       7.20 r
+  a01/mult_377_2/a[14] (FFT_7_DW_mult_tc_4)               0.00       7.20 r
+  a01/mult_377_2/U1666/Y (CLKXOR2X8)                      0.29       7.49 r
+  a01/mult_377_2/U1661/Y (NAND2BX4)                       0.50       7.99 f
+  a01/mult_377_2/U2195/Y (OAI21XL)                        0.79       8.78 r
+  a01/mult_377_2/U1129/Y (CLKXOR2X8)                      0.38       9.16 f
+  a01/mult_377_2/U720/CO (ADDFHX4)                        0.21       9.37 f
+  a01/mult_377_2/U2306/S (CMPR22X2)                       0.16       9.53 r
+  a01/mult_377_2/U716/CO (CMPR42X2)                       0.75      10.28 f
+  a01/mult_377_2/U2353/S (ADDHX2)                         0.17      10.45 r
+  a01/mult_377_2/U713/CO (CMPR42X2)                       0.74      11.19 f
+  a01/mult_377_2/U2363/S (ADDHX2)                         0.14      11.33 f
+  a01/mult_377_2/U710/CO (CMPR42X2)                       0.74      12.07 f
+  a01/mult_377_2/U2354/S (ADDHX2)                         0.14      12.22 f
+  a01/mult_377_2/U707/CO (CMPR42X2)                       0.74      12.96 f
+  a01/mult_377_2/U2352/S (ADDHX2)                         0.17      13.13 r
+  a01/mult_377_2/U704/CO (CMPR42X2)                       0.74      13.86 f
+  a01/mult_377_2/U2361/S (ADDHX2)                         0.14      14.01 f
+  a01/mult_377_2/U701/CO (CMPR42X2)                       0.80      14.81 f
+  a01/mult_377_2/U2296/Y (XOR2X4)                         0.15      14.95 r
+  a01/mult_377_2/U696/CO (CMPR42X2)                       0.76      15.71 f
+  a01/mult_377_2/U2350/S (ADDHX2)                         0.17      15.88 r
+  a01/mult_377_2/U693/CO (CMPR42X2)                       0.74      16.62 f
+  a01/mult_377_2/U690/S (CMPR42X2)                        0.68      17.30 f
+  a01/mult_377_2/U688/CO (CMPR42X2)                       0.72      18.02 f
+  a01/mult_377_2/U2305/S (CMPR22X2)                       0.14      18.16 f
+  a01/mult_377_2/U685/CO (CMPR42X2)                       0.73      18.89 f
+  a01/mult_377_2/U682/S (CMPR42X2)                        0.71      19.60 f
+  a01/mult_377_2/U680/CO (CMPR42X2)                       0.72      20.32 f
+  a01/mult_377_2/U2346/S (CMPR22X2)                       0.13      20.45 r
+  a01/mult_377_2/U677/S (CMPR42X2)                        0.81      21.27 f
+  a01/mult_377_2/U675/CO (CMPR42X2)                       0.72      21.99 f
+  a01/mult_377_2/U2348/S (ADDHX2)                         0.14      22.13 f
+  a01/mult_377_2/U672/S (CMPR42X2)                        0.79      22.92 f
+  a01/mult_377_2/U670/CO (CMPR42X2)                       0.65      23.57 f
+  a01/mult_377_2/U2262/S (CMPR22X2)                       0.14      23.71 f
+  a01/mult_377_2/U667/S (CMPR42X2)                        0.79      24.50 f
+  a01/mult_377_2/U665/CO (CMPR42X2)                       0.72      25.22 f
+  a01/mult_377_2/U2362/S (CMPR22X2)                       0.13      25.35 r
+  a01/mult_377_2/U662/CO (CMPR42X2)                       0.76      26.11 f
+  a01/mult_377_2/U657/S (CMPR42X2)                        0.78      26.90 f
+  a01/mult_377_2/U655/CO (CMPR42X2)                       0.72      27.62 f
+  a01/mult_377_2/U2351/S (ADDHX2)                         0.14      27.76 f
+  a01/mult_377_2/U652/S (CMPR42X2)                        0.79      28.55 f
+  a01/mult_377_2/U650/CO (CMPR42X2)                       0.72      29.27 f
+  a01/mult_377_2/U2301/S (ADDHX2)                         0.14      29.42 f
+  a01/mult_377_2/U647/S (CMPR42X2)                        0.80      30.21 f
+  a01/mult_377_2/U645/CO (CMPR42X2)                       0.78      30.99 f
+  a01/mult_377_2/U2240/Y (XOR2X4)                         0.15      31.14 r
+  a01/mult_377_2/U640/S (CMPR42X2)                        0.81      31.95 f
+  a01/mult_377_2/U638/CO (CMPR42X2)                       0.74      32.68 f
+  a01/mult_377_2/U2359/S (ADDHX2)                         0.17      32.85 r
+  a01/mult_377_2/U635/S (CMPR42X2)                        0.80      33.65 f
+  a01/mult_377_2/U633/CO (CMPR42X2)                       0.71      34.37 f
+  a01/mult_377_2/U629/S (CMPR42X2)                        0.61      34.97 f
+  a01/mult_377_2/U627/S (CMPR42X2)                        0.77      35.74 f
+  a01/mult_377_2/U625/CO (CMPR42X2)                       0.24      35.98 f
+  a01/mult_377_2/U623/S (CMPR42X2)                        0.71      36.69 f
+  a01/mult_377_2/U621/S (CMPR42X2)                        0.78      37.47 f
+  a01/mult_377_2/U619/CO (CMPR42X2)                       0.73      38.20 f
+  a01/mult_377_2/U617/S (CMPR42X2)                        0.71      38.91 f
+  a01/mult_377_2/U615/S (CMPR42X2)                        0.78      39.70 f
+  a01/mult_377_2/U613/CO (CMPR42X2)                       0.73      40.43 f
+  a01/mult_377_2/U611/S (CMPR42X2)                        0.71      41.14 f
+  a01/mult_377_2/U608/CO (CMPR42X2)                       0.73      41.86 f
+  a01/mult_377_2/U2341/Y (XOR2X4)                         0.17      42.03 r
+  a01/mult_377_2/U2342/Y (XOR2X4)                         0.20      42.23 r
+  a01/mult_377_2/U2344/Y (XOR2X4)                         0.20      42.43 r
+  a01/mult_377_2/U2355/Y (XOR2X4)                         0.16      42.59 r
+  a01/mult_377_2/U2356/Y (XOR2X4)                         0.15      42.74 r
+  a01/mult_377_2/U2358/Y (XOR2X4)                         0.15      42.89 r
+  a01/mult_377_2/U2357/Y (XOR2X4)                         0.19      43.09 f
+  a01/mult_377_2/U2293/Y (NOR2X6)                         0.12      43.20 r
+  a01/mult_377_2/U2302/Y (INVX6)                          0.06      43.27 f
+  a01/mult_377_2/U2345/Y (NAND2X6)                        0.06      43.32 r
+  a01/mult_377_2/U2260/Y (XOR2X4)                         0.14      43.47 f
+  a01/mult_377_2/product[37] (FFT_7_DW_mult_tc_4)         0.00      43.47 f
+  a01/add_377/B[37] (FFT_7_DW01_add_6)                    0.00      43.47 f
+  a01/add_377/U332/Y (OR2X8)                              0.18      43.64 f
+  a01/add_377/U333/Y (NAND2X8)                            0.06      43.70 r
+  a01/add_377/U336/Y (XOR2X4)                             0.17      43.87 f
+  a01/add_377/SUM[37] (FFT_7_DW01_add_6)                  0.00      43.87 f
+  a01/U59/Y (BUFX20)                                      0.15      44.02 f
+  a01/FFT_out_R2[22] (FFT_7)                              0.00      44.02 f
+  U7146/Y (CLKINVX6)                                      0.08      44.09 r
+  U3573/Y (OAI222XL)                                      0.23      44.33 f
+  fft_data1_real_reg[9][22]/D (EDFFX1)                    0.00      44.33 f
+  data arrival time                                                 44.33
+
+  clock clk (rise edge)                                  45.00      45.00
+  clock network delay (ideal)                             1.00      46.00
+  clock uncertainty                                      -1.00      45.00
+  fft_data1_real_reg[9][22]/CK (EDFFX1)                   0.00      45.00 r
+  library setup time                                     -0.67      44.33
+  data required time                                                44.33
+  --------------------------------------------------------------------------
+  data required time                                                44.33
+  data arrival time                                                -44.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Error: Could not read the following target libraries:
+slow.db fast.db 
+ (UIO-3)
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Information: Updating design information... (UID-85)
+Warning: Design 'FAS' contains 3 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FAS
+Version: S-2021.06-SP2
+Date   : Thu Jan  6 16:36:18 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: nom_pvt   Library: dw_foundation.sldb
+Wire Load Model Mode: top
+
+  Startpoint: done_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: done (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  done_reg/clocked_on (**SEQGEN**)         0.00 #     1.00 r
+  done_reg/Q (**SEQGEN**)                  0.00       1.00 r
+  done (out)                               0.00       1.00 r
+  data arrival time                                   1.00
+
+  clock clk (rise edge)                   45.00      45.00
+  clock network delay (ideal)              1.00      46.00
+  clock uncertainty                       -1.00      45.00
+  output external delay                   -1.00      44.00
+  data required time                                 44.00
+  -----------------------------------------------------------
+  data required time                                 44.00
+  data arrival time                                  -1.00
+  -----------------------------------------------------------
+  slack (MET)                                        43.00
+
+
+1
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Error: Could not read the following target libraries:
+slow.db fast.db 
+ (UIO-3)
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Warning: Can't read link_library file 'slow.db'. (UID-3)
+Warning: Can't read link_library file 'fast.db'. (UID-3)
+Information: Updating design information... (UID-85)
+Warning: Design 'FAS' contains 3 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FAS
+Version: S-2021.06-SP2
+Date   : Fri Jan 21 12:49:04 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: nom_pvt   Library: dw_foundation.sldb
+Wire Load Model Mode: top
+
+  Startpoint: done_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: done (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  done_reg/clocked_on (**SEQGEN**)         0.00 #     1.00 r
+  done_reg/Q (**SEQGEN**)                  0.00       1.00 r
+  done (out)                               0.00       1.00 r
+  data arrival time                                   1.00
+
+  clock clk (rise edge)                   45.00      45.00
+  clock network delay (ideal)              1.00      46.00
+  clock uncertainty                       -1.00      45.00
+  output external delay                   -1.00      44.00
+  data required time                                 44.00
+  -----------------------------------------------------------
+  data required time                                 44.00
+  data arrival time                                  -1.00
+  -----------------------------------------------------------
+  slack (MET)                                        43.00
+
+
+1
